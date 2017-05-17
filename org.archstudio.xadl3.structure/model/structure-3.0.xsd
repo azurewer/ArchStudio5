@@ -67,6 +67,17 @@
 		<xs:sequence>
 			<xs:element name="component" type="Component"
 			            minOccurs="0" maxOccurs="unbounded"/>
+			            
+			            	<!-- ************201705wjw modified************** -->
+			<xs:element name="coalAgent" type="CoalAgent"
+			            minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="funAgent" type="FunAgent"
+			            minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="encapsulatedUnit" type="EncapsulatedUnit"
+			            minOccurs="0" maxOccurs="unbounded"/>            
+			<!-- ************201705wjw modified************** -->
+			
+			
 			<xs:element name="connector" type="Connector"
 			            minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="link" type="Link"
@@ -176,6 +187,62 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	
+	
+	<!-- ************201705wjw modified************** -->
+	<xs:complexType name="CoalAgent">
+		<xs:annotation>
+			<xs:documentation>
+				Components are the Coalition Agent in an
+				architecture.  They inherit all the properties
+				of a Brick: ID, name, interfaces, and optional
+				substructure.
+			</xs:documentation>
+		</xs:annotation>
+		
+		<xs:complexContent>
+			<xs:extension base="Brick">
+				<xs:sequence>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="FunAgent">
+		<xs:annotation>
+			<xs:documentation>
+				Components are the Coalition Agent in an
+				architecture.  They inherit all the properties
+				of a Brick: ID, name, interfaces, and optional
+				substructure.
+			</xs:documentation>
+		</xs:annotation>
+		
+		<xs:complexContent>
+			<xs:extension base="Brick">
+				<xs:sequence>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="EncapsulatedUnit">
+		<xs:annotation>
+			<xs:documentation>
+				Components are the Coalition Agent in an
+				architecture.  They inherit all the properties
+				of a Brick: ID, name, interfaces, and optional
+				substructure.
+			</xs:documentation>
+		</xs:annotation>
+		
+		<xs:complexContent>
+			<xs:extension base="Brick">
+				<xs:sequence>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ************201705wjw modified************** -->
+	
 	
 	<!-- COMPLEX TYPE: Connector -->
 

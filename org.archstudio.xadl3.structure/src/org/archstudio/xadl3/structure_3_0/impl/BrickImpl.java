@@ -20,24 +20,30 @@ import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '<em><b>Brick</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Brick</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.BrickImpl#getInterface <em>Interface</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.BrickImpl#getSubStructure <em>Sub Structure</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.BrickImpl#getExt <em>Ext</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.BrickImpl#getId <em>Id</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.BrickImpl#getName <em>Name</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.BrickImpl#getInterface
+ * <em>Interface</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.BrickImpl#getSubStructure
+ * <em>Sub Structure</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.BrickImpl#getExt
+ * <em>Ext</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.BrickImpl#getId
+ * <em>Id</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.BrickImpl#getName
+ * <em>Name</em>}</li>
  * </ul>
  *
  * @generated
  */
 public abstract class BrickImpl extends MinimalEObjectImpl.Container implements Brick {
 	/**
-	 * The cached value of the '{@link #getInterface() <em>Interface</em>}' containment reference list. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
+	 * The cached value of the '{@link #getInterface() <em>Interface</em>}'
+	 * containment reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getInterface()
 	 * @generated
@@ -46,8 +52,9 @@ public abstract class BrickImpl extends MinimalEObjectImpl.Container implements 
 	protected EList<Interface> interface_;
 
 	/**
-	 * The cached value of the '{@link #getSubStructure() <em>Sub Structure</em>}' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
+	 * The cached value of the '{@link #getSubStructure() <em>Sub
+	 * Structure</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * 
 	 * @see #getSubStructure()
 	 * @generated
@@ -56,8 +63,8 @@ public abstract class BrickImpl extends MinimalEObjectImpl.Container implements 
 	protected SubStructure subStructure;
 
 	/**
-	 * The cached value of the '{@link #getExt() <em>Ext</em>}' containment reference list. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * The cached value of the '{@link #getExt() <em>Ext</em>}' containment
+	 * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getExt()
 	 * @generated
@@ -66,7 +73,8 @@ public abstract class BrickImpl extends MinimalEObjectImpl.Container implements 
 	protected EList<Extension> ext;
 
 	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getId()
 	 * @generated
@@ -75,7 +83,8 @@ public abstract class BrickImpl extends MinimalEObjectImpl.Container implements 
 	protected static final String ID_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getId()
 	 * @generated
@@ -84,8 +93,8 @@ public abstract class BrickImpl extends MinimalEObjectImpl.Container implements 
 	protected String id = ID_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getName()
 	 * @generated
@@ -94,8 +103,8 @@ public abstract class BrickImpl extends MinimalEObjectImpl.Container implements 
 	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getName()
 	 * @generated
@@ -157,12 +166,10 @@ public abstract class BrickImpl extends MinimalEObjectImpl.Container implements 
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
 					Structure_3_0Package.BRICK__SUB_STRUCTURE, oldSubStructure, newSubStructure);
-			if (msgs == null) {
+			if (msgs == null)
 				msgs = notification;
-			}
-			else {
+			else
 				msgs.add(notification);
-			}
 		}
 		return msgs;
 	}
@@ -176,23 +183,18 @@ public abstract class BrickImpl extends MinimalEObjectImpl.Container implements 
 	public void setSubStructure(SubStructure newSubStructure) {
 		if (newSubStructure != subStructure) {
 			NotificationChain msgs = null;
-			if (subStructure != null) {
+			if (subStructure != null)
 				msgs = ((InternalEObject) subStructure).eInverseRemove(this,
 						EOPPOSITE_FEATURE_BASE - Structure_3_0Package.BRICK__SUB_STRUCTURE, null, msgs);
-			}
-			if (newSubStructure != null) {
+			if (newSubStructure != null)
 				msgs = ((InternalEObject) newSubStructure).eInverseAdd(this,
 						EOPPOSITE_FEATURE_BASE - Structure_3_0Package.BRICK__SUB_STRUCTURE, null, msgs);
-			}
 			msgs = basicSetSubStructure(newSubStructure, msgs);
-			if (msgs != null) {
+			if (msgs != null)
 				msgs.dispatch();
-			}
-		}
-		else if (eNotificationRequired()) {
+		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Structure_3_0Package.BRICK__SUB_STRUCTURE,
 					newSubStructure, newSubStructure));
-		}
 	}
 
 	/**
@@ -227,9 +229,8 @@ public abstract class BrickImpl extends MinimalEObjectImpl.Container implements 
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
-		if (eNotificationRequired()) {
+		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Structure_3_0Package.BRICK__ID, oldId, id));
-		}
 	}
 
 	/**
@@ -251,9 +252,8 @@ public abstract class BrickImpl extends MinimalEObjectImpl.Container implements 
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
-		if (eNotificationRequired()) {
+		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Structure_3_0Package.BRICK__NAME, oldName, name));
-		}
 	}
 
 	/**
@@ -382,9 +382,8 @@ public abstract class BrickImpl extends MinimalEObjectImpl.Container implements 
 	 */
 	@Override
 	public String toString() {
-		if (eIsProxy()) {
+		if (eIsProxy())
 			return super.toString();
-		}
 
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (id: ");

@@ -87,6 +87,24 @@ public abstract class AbstractGraphvizLayoutEngine implements ILayoutEngine {
 			createBrick(sb, at, xarch, componentRef, params, true);
 		}
 		sb.append(EOL);
+		
+		/**201705 wjw modified**/
+		for (ObjRef coalAgentRef : Iterables.filter(xarch.getAll(rootRef, "coalAgent"), ObjRef.class)) {
+			createBrick(sb, at, xarch, coalAgentRef, params, true);
+		}
+		sb.append(EOL);
+		
+		for (ObjRef funAgentRef : Iterables.filter(xarch.getAll(rootRef, "funAgent"), ObjRef.class)) {
+			createBrick(sb, at, xarch, funAgentRef, params, true);
+		}
+		sb.append(EOL);
+		
+		for (ObjRef encapsulatedUnitRef : Iterables.filter(xarch.getAll(rootRef, "encapsulatedUnit"), ObjRef.class)) {
+			createBrick(sb, at, xarch, encapsulatedUnitRef, params, true);
+		}
+		sb.append(EOL);
+		/**201705 wjw modified**/
+		
 		for (ObjRef connectorRef : Iterables.filter(xarch.getAll(rootRef, "connector"), ObjRef.class)) {
 			createBrick(sb, at, xarch, connectorRef, params, false);
 		}

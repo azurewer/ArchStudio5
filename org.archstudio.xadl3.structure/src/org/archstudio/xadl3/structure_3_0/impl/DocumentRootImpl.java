@@ -19,24 +19,28 @@ import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '<em><b>Document Root</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Document Root</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.DocumentRootImpl#getMixed <em>Mixed</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.DocumentRootImpl#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.DocumentRootImpl#getXSISchemaLocation <em>XSI Schema Location</em>
- * }</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.DocumentRootImpl#getStructure <em>Structure</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.DocumentRootImpl#getMixed
+ * <em>Mixed</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.DocumentRootImpl#getXMLNSPrefixMap
+ * <em>XMLNS Prefix Map</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.DocumentRootImpl#getXSISchemaLocation
+ * <em>XSI Schema Location</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.DocumentRootImpl#getStructure
+ * <em>Structure</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class DocumentRootImpl extends MinimalEObjectImpl.Container implements DocumentRoot {
 	/**
-	 * The cached value of the '{@link #getMixed() <em>Mixed</em>}' attribute list. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * The cached value of the '{@link #getMixed() <em>Mixed</em>}' attribute
+	 * list. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getMixed()
 	 * @generated
@@ -45,8 +49,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	protected FeatureMap mixed;
 
 	/**
-	 * The cached value of the '{@link #getXMLNSPrefixMap() <em>XMLNS Prefix Map</em>}' map. <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getXMLNSPrefixMap() <em>XMLNS Prefix
+	 * Map</em>}' map. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getXMLNSPrefixMap()
 	 * @generated
@@ -55,8 +59,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	protected EMap<String, String> xMLNSPrefixMap;
 
 	/**
-	 * The cached value of the '{@link #getXSISchemaLocation() <em>XSI Schema Location</em>}' map. <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+	 * The cached value of the '{@link #getXSISchemaLocation() <em>XSI Schema
+	 * Location</em>}' map. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getXSISchemaLocation()
 	 * @generated
@@ -183,24 +187,19 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 		case Structure_3_0Package.DOCUMENT_ROOT__MIXED:
-			if (coreType) {
+			if (coreType)
 				return getMixed();
-			}
 			return ((FeatureMap.Internal) getMixed()).getWrapper();
 		case Structure_3_0Package.DOCUMENT_ROOT__XMLNS_PREFIX_MAP:
-			if (coreType) {
+			if (coreType)
 				return getXMLNSPrefixMap();
-			}
-			else {
+			else
 				return getXMLNSPrefixMap().map();
-			}
 		case Structure_3_0Package.DOCUMENT_ROOT__XSI_SCHEMA_LOCATION:
-			if (coreType) {
+			if (coreType)
 				return getXSISchemaLocation();
-			}
-			else {
+			else
 				return getXSISchemaLocation().map();
-			}
 		case Structure_3_0Package.DOCUMENT_ROOT__STRUCTURE:
 			return getStructure();
 		}
@@ -282,9 +281,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public String toString() {
-		if (eIsProxy()) {
+		if (eIsProxy())
 			return super.toString();
-		}
 
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (mixed: ");

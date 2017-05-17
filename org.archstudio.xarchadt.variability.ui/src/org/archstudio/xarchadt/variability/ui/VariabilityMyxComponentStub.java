@@ -5,13 +5,16 @@ import org.archstudio.myx.fw.MyxRegistry;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "Variability Myx Component" MyxGen extension in the org.archstudio.xarchadt.variability.ui plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "Variability Myx Component" MyxGen 
+ * extension in the org.archstudio.xarchadt.variability.ui plugin.
  */
 
 /**
  * Abstract Myx brick: Variability Myx Component
- *
+ * 
  * @generated
  */
 public abstract class VariabilityMyxComponentStub extends org.archstudio.myx.fw.AbstractMyxSimpleBrick
@@ -47,7 +50,7 @@ public abstract class VariabilityMyxComponentStub extends org.archstudio.myx.fw.
 
 	/**
 	 * Myx name for the <code>xarch</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_XARCH = MyxUtils.createName("xarch");
@@ -75,21 +78,21 @@ public abstract class VariabilityMyxComponentStub extends org.archstudio.myx.fw.
 
 	/**
 	 * Myx name for the <code>modelEvents</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_MODEL_EVENTS = MyxUtils.createName("modelEvents");
 
 	/**
-	 * Service object proxy for the modelEvents interface. Calls to this proxy object are automatically delegated to all
-	 * service objects in the MyxRegistry of type org.archstudio.xarchadt.IXArchADTModelListener.
+	 * Service object proxy for the modelEvents interface. Calls to this proxy
+	 * object are automatically delegated to all service objects in the
+	 * MyxRegistry of type org.archstudio.xarchadt.IXArchADTModelListener.
 	 * 
 	 * @see #IN_MODEL_EVENTS
 	 * @generated
 	 */
-	protected final org.archstudio.xarchadt.IXArchADTModelListener modelEventsProxy =
-			(org.archstudio.xarchadt.IXArchADTModelListener) java.lang.reflect.Proxy.newProxyInstance(
-					org.archstudio.xarchadt.IXArchADTModelListener.class.getClassLoader(),
+	protected final org.archstudio.xarchadt.IXArchADTModelListener modelEventsProxy = (org.archstudio.xarchadt.IXArchADTModelListener) java.lang.reflect.Proxy
+			.newProxyInstance(org.archstudio.xarchadt.IXArchADTModelListener.class.getClassLoader(),
 					new Class[] { org.archstudio.xarchadt.IXArchADTModelListener.class },
 					new java.lang.reflect.InvocationHandler() {
 						@Override
@@ -100,8 +103,7 @@ public abstract class VariabilityMyxComponentStub extends org.archstudio.myx.fw.
 									org.archstudio.xarchadt.IXArchADTModelListener.class)) {
 								try {
 									method.invoke(o, args);
-								}
-								catch (Exception e) {
+								} catch (Exception e) {
 									e.printStackTrace();
 								}
 							}
@@ -121,21 +123,21 @@ public abstract class VariabilityMyxComponentStub extends org.archstudio.myx.fw.
 
 	/**
 	 * Myx name for the <code>fileEvents</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_FILE_EVENTS = MyxUtils.createName("fileEvents");
 
 	/**
-	 * Service object proxy for the fileEvents interface. Calls to this proxy object are automatically delegated to all
-	 * service objects in the MyxRegistry of type org.archstudio.xarchadt.IXArchADTFileListener.
+	 * Service object proxy for the fileEvents interface. Calls to this proxy
+	 * object are automatically delegated to all service objects in the
+	 * MyxRegistry of type org.archstudio.xarchadt.IXArchADTFileListener.
 	 * 
 	 * @see #IN_FILE_EVENTS
 	 * @generated
 	 */
-	protected final org.archstudio.xarchadt.IXArchADTFileListener fileEventsProxy =
-			(org.archstudio.xarchadt.IXArchADTFileListener) java.lang.reflect.Proxy.newProxyInstance(
-					org.archstudio.xarchadt.IXArchADTFileListener.class.getClassLoader(),
+	protected final org.archstudio.xarchadt.IXArchADTFileListener fileEventsProxy = (org.archstudio.xarchadt.IXArchADTFileListener) java.lang.reflect.Proxy
+			.newProxyInstance(org.archstudio.xarchadt.IXArchADTFileListener.class.getClassLoader(),
 					new Class[] { org.archstudio.xarchadt.IXArchADTFileListener.class },
 					new java.lang.reflect.InvocationHandler() {
 						@Override
@@ -146,8 +148,7 @@ public abstract class VariabilityMyxComponentStub extends org.archstudio.myx.fw.
 									org.archstudio.xarchadt.IXArchADTFileListener.class)) {
 								try {
 									method.invoke(o, args);
-								}
-								catch (Exception e) {
+								} catch (Exception e) {
 									e.printStackTrace();
 								}
 							}
@@ -167,22 +168,22 @@ public abstract class VariabilityMyxComponentStub extends org.archstudio.myx.fw.
 
 	/**
 	 * Myx name for the <code>variabilityEvents</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_VARIABILITY_EVENTS = MyxUtils.createName("variabilityEvents");
 
 	/**
-	 * Service object proxy for the variabilityEvents interface. Calls to this proxy object are automatically delegated
-	 * to all service objects in the MyxRegistry of type
+	 * Service object proxy for the variabilityEvents interface. Calls to this
+	 * proxy object are automatically delegated to all service objects in the
+	 * MyxRegistry of type
 	 * org.archstudio.xarchadt.variability.IXArchADTVariabilityListener.
 	 * 
 	 * @see #IN_VARIABILITY_EVENTS
 	 * @generated
 	 */
-	protected final org.archstudio.xarchadt.variability.IXArchADTVariabilityListener variabilityEventsProxy =
-			(org.archstudio.xarchadt.variability.IXArchADTVariabilityListener) java.lang.reflect.Proxy.newProxyInstance(
-					org.archstudio.xarchadt.variability.IXArchADTVariabilityListener.class.getClassLoader(),
+	protected final org.archstudio.xarchadt.variability.IXArchADTVariabilityListener variabilityEventsProxy = (org.archstudio.xarchadt.variability.IXArchADTVariabilityListener) java.lang.reflect.Proxy
+			.newProxyInstance(org.archstudio.xarchadt.variability.IXArchADTVariabilityListener.class.getClassLoader(),
 					new Class[] { org.archstudio.xarchadt.variability.IXArchADTVariabilityListener.class },
 					new java.lang.reflect.InvocationHandler() {
 						@Override
@@ -193,8 +194,7 @@ public abstract class VariabilityMyxComponentStub extends org.archstudio.myx.fw.
 											org.archstudio.xarchadt.variability.IXArchADTVariabilityListener.class)) {
 								try {
 									method.invoke(o, args);
-								}
-								catch (Exception e) {
+								} catch (Exception e) {
 									e.printStackTrace();
 								}
 							}
@@ -242,14 +242,12 @@ public abstract class VariabilityMyxComponentStub extends org.archstudio.myx.fw.
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		if (interfaceName.equals(OUT_XARCH)) {
-			if (xarch != null) {
+			if (xarch != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: xarch");
-			}
 			xarch = (org.archstudio.xarchadt.variability.IXArchADTVariability) serviceObject;
 			return;
 		}
@@ -265,13 +263,11 @@ public abstract class VariabilityMyxComponentStub extends org.archstudio.myx.fw.
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		if (interfaceName.equals(OUT_XARCH)) {
-			if (xarch == null) {
+			if (xarch == null)
 				throw new IllegalStateException("A connection was never made on interface: xarch");
-			}
 			xarch = null;
 			return;
 		}

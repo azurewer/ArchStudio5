@@ -15,11 +15,27 @@ public class ArchStudioCommonResources {
 	public static final String ICON_OVERLAY_XML = "archstudio:icon-overlay/xml";
 
 	public static final String ICON_COMPONENT = "archstudio:icon/component";
+	
+	//***************wjw201705***************//
+	public static final String ICON_COALAGENT = "archstudio:icon/coalAgent";
+	public static final String ICON_FUNAGENT = "archstudio:icon/funAgent";
+	public static final String ICON_ENCAPSULATEDUNIT = "archstudio:icon/encapsulatedUnit";
+	//***************wjw201705***************//
+	
+	
 	public static final String ICON_CONNECTOR = "archstudio:icon/connector";
 	public static final String ICON_INTERFACE = "archstudio:icon/interface";
 	public static final String ICON_LINK = "archstudio:icon/link";
 	public static final String ICON_TYPES = "archstudio:icon/types";
 	public static final String ICON_COMPONENT_TYPE = "archstudio:icon/component-type";
+	
+	//***************wjw201705***************//
+		public static final String ICON_COALAGENT_TYPE = "archstudio:icon/coalAgent-type";
+		public static final String ICON_FUNAGENT_TYPE = "archstudio:icon/funAgent-type";
+		public static final String ICON_ENCAPSULATEDUNIT_TYPE = "archstudio:icon/encapsulatedUnit-type";
+		//***************wjw201705***************//
+	
+	
 	public static final String ICON_CONNECTOR_TYPE = "archstudio:icon/connector-type";
 	public static final String ICON_INTERFACE_TYPE = "archstudio:icon/interface-type";
 
@@ -51,6 +67,16 @@ public class ArchStudioCommonResources {
 
 			resources.createImage(ICON_COMPONENT,
 					SystemUtils.blt(ArchStudioCommonResources.class.getResourceAsStream("res/icon-component.gif")));
+			
+			//***************wjw201705***************//
+			resources.createImage(ICON_COALAGENT,
+					SystemUtils.blt(ArchStudioCommonResources.class.getResourceAsStream("res/icon-coalAgent.gif")));
+			resources.createImage(ICON_FUNAGENT,
+					SystemUtils.blt(ArchStudioCommonResources.class.getResourceAsStream("res/icon-funAgent.gif")));
+			resources.createImage(ICON_ENCAPSULATEDUNIT,
+					SystemUtils.blt(ArchStudioCommonResources.class.getResourceAsStream("res/icon-encapsulatedUnit.gif")));
+			//***************wjw201705***************//
+			
 			resources.createImage(ICON_CONNECTOR,
 					SystemUtils.blt(ArchStudioCommonResources.class.getResourceAsStream("res/icon-connector.gif")));
 			resources.createImage(ICON_INTERFACE,
@@ -61,6 +87,21 @@ public class ArchStudioCommonResources {
 			resources
 					.createImage(ICON_COMPONENT_TYPE, SystemUtils.blt(ArchStudioCommonResources.class
 							.getResourceAsStream("res/icon-component-type.gif")));
+			
+			//***************wjw201705***************//
+			resources
+					.createImage(ICON_COALAGENT_TYPE, SystemUtils.blt(ArchStudioCommonResources.class
+					.getResourceAsStream("res/icon-coalAgent-type.gif")));
+			
+			resources
+					.createImage(ICON_FUNAGENT_TYPE, SystemUtils.blt(ArchStudioCommonResources.class
+					.getResourceAsStream("res/icon-funAgent-type.gif")));
+			resources
+					.createImage(ICON_ENCAPSULATEDUNIT_TYPE, SystemUtils.blt(ArchStudioCommonResources.class
+					.getResourceAsStream("res/icon-encapsulatedUnit-type.gif")));
+			//***************wjw201705***************//
+			
+			
 			resources
 					.createImage(ICON_CONNECTOR_TYPE, SystemUtils.blt(ArchStudioCommonResources.class
 							.getResourceAsStream("res/icon-connector-type.gif")));

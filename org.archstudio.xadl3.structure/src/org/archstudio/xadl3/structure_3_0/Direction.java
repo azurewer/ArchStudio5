@@ -9,11 +9,18 @@ import java.util.List;
 import org.eclipse.emf.common.util.Enumerator;
 
 /**
- * <!-- begin-user-doc --> A representation of the literals of the enumeration '<em><b>Direction</b></em>', and utility
- * methods for working with them. <!-- end-user-doc --> <!-- begin-model-doc --> This enumeration defines legal
- * interface directions. They are: - none: No directionality selected or implied. - in: Incoming interface. Provided
- * services should be "in" interfaces. - out: Outgoing interface. Required services should be "out" interfaces. - inout:
- * Incoming AND outgoing interface. Endpoint both provides and requires a service. <!-- end-model-doc -->
+ * <!-- begin-user-doc --> A representation of the literals of the enumeration
+ * '<em><b>Direction</b></em>', and utility methods for working with them. <!--
+ * end-user-doc --> <!-- begin-model-doc -->
+ * 
+ * This enumeration defines legal interface directions.
+ * 
+ * They are: - none: No directionality selected or implied. - in: Incoming
+ * interface. Provided services should be "in" interfaces. - out: Outgoing
+ * interface. Required services should be "out" interfaces. - inout: Incoming
+ * AND outgoing interface. Endpoint both provides and requires a service.
+ * 
+ * <!-- end-model-doc -->
  * 
  * @see org.archstudio.xadl3.structure_3_0.Structure_3_0Package#getDirection()
  * @model extendedMetaData="name='Direction'"
@@ -21,7 +28,8 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum Direction implements Enumerator {
 	/**
-	 * The '<em><b>None</b></em>' literal object. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * The '<em><b>None</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * 
 	 * @see #NONE_VALUE
 	 * @generated
@@ -30,7 +38,8 @@ public enum Direction implements Enumerator {
 	NONE(0, "none", "none"),
 
 	/**
-	 * The '<em><b>In</b></em>' literal object. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * The '<em><b>In</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * 
 	 * @see #IN_VALUE
 	 * @generated
@@ -39,7 +48,8 @@ public enum Direction implements Enumerator {
 	IN(1, "in", "in"),
 
 	/**
-	 * The '<em><b>Out</b></em>' literal object. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * The '<em><b>Out</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * 
 	 * @see #OUT_VALUE
 	 * @generated
@@ -48,7 +58,8 @@ public enum Direction implements Enumerator {
 	OUT(2, "out", "out"),
 
 	/**
-	 * The '<em><b>Inout</b></em>' literal object. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * The '<em><b>Inout</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * 
 	 * @see #INOUT_VALUE
 	 * @generated
@@ -59,8 +70,8 @@ public enum Direction implements Enumerator {
 	/**
 	 * The '<em><b>None</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>None</b></em>' literal object isn't clear, there really should be more of a description
-	 * here...
+	 * If the meaning of '<em><b>None</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * 
@@ -74,8 +85,8 @@ public enum Direction implements Enumerator {
 	/**
 	 * The '<em><b>In</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>In</b></em>' literal object isn't clear, there really should be more of a description
-	 * here...
+	 * If the meaning of '<em><b>In</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * 
@@ -89,8 +100,8 @@ public enum Direction implements Enumerator {
 	/**
 	 * The '<em><b>Out</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Out</b></em>' literal object isn't clear, there really should be more of a description
-	 * here...
+	 * If the meaning of '<em><b>Out</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * 
@@ -104,8 +115,8 @@ public enum Direction implements Enumerator {
 	/**
 	 * The '<em><b>Inout</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Inout</b></em>' literal object isn't clear, there really should be more of a
-	 * description here...
+	 * If the meaning of '<em><b>Inout</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * 
@@ -117,30 +128,33 @@ public enum Direction implements Enumerator {
 	public static final int INOUT_VALUE = 3;
 
 	/**
-	 * An array of all the '<em><b>Direction</b></em>' enumerators. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * An array of all the '<em><b>Direction</b></em>' enumerators. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated
 	 */
 	private static final Direction[] VALUES_ARRAY = new Direction[] { NONE, IN, OUT, INOUT, };
 
 	/**
-	 * A public read-only list of all the '<em><b>Direction</b></em>' enumerators. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * A public read-only list of all the '<em><b>Direction</b></em>'
+	 * enumerators. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated
 	 */
 	public static final List<Direction> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>Direction</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * Returns the '<em><b>Direction</b></em>' literal with the specified
+	 * literal value. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @param literal the literal.
+	 * @param literal
+	 *            the literal.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static Direction get(String literal) {
-		for (Direction result : VALUES_ARRAY) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			Direction result = VALUES_ARRAY[i];
 			if (result.toString().equals(literal)) {
 				return result;
 			}
@@ -149,15 +163,17 @@ public enum Direction implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Direction</b></em>' literal with the specified name. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * Returns the '<em><b>Direction</b></em>' literal with the specified name.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @param name the name.
+	 * @param name
+	 *            the name.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static Direction getByName(String name) {
-		for (Direction result : VALUES_ARRAY) {
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			Direction result = VALUES_ARRAY[i];
 			if (result.getName().equals(name)) {
 				return result;
 			}
@@ -166,10 +182,11 @@ public enum Direction implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Direction</b></em>' literal with the specified integer value. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * Returns the '<em><b>Direction</b></em>' literal with the specified
+	 * integer value. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @param value the integer value.
+	 * @param value
+	 *            the integer value.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
@@ -209,7 +226,8 @@ public enum Direction implements Enumerator {
 	private final String literal;
 
 	/**
-	 * Only this class can construct instances. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * Only this class can construct instances. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * 
 	 * @generated
 	 */
@@ -250,8 +268,8 @@ public enum Direction implements Enumerator {
 	}
 
 	/**
-	 * Returns the literal value of the enumerator, which is its string representation. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string
+	 * representation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated
 	 */

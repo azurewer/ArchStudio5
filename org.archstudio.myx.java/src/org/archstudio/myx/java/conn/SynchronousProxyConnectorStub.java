@@ -5,13 +5,16 @@ import org.archstudio.myx.fw.MyxRegistry;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "Synch Proxy Impl" MyxGen extension in the org.archstudio.myx.java plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "Synch Proxy Impl" MyxGen 
+ * extension in the org.archstudio.myx.java plugin.
  */
 
 /**
  * Abstract Myx brick: Synch Proxy Impl
- *
+ * 
  * @generated
  */
 public abstract class SynchronousProxyConnectorStub extends org.archstudio.myx.fw.AbstractMyxSimpleBrick
@@ -47,7 +50,7 @@ public abstract class SynchronousProxyConnectorStub extends org.archstudio.myx.f
 
 	/**
 	 * Myx name for the <code>in</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_IN = MyxUtils.createName("in");
@@ -75,7 +78,7 @@ public abstract class SynchronousProxyConnectorStub extends org.archstudio.myx.f
 
 	/**
 	 * Myx name for the <code>out</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_OUT = MyxUtils.createName("out");
@@ -126,14 +129,12 @@ public abstract class SynchronousProxyConnectorStub extends org.archstudio.myx.f
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		if (interfaceName.equals(OUT_OUT)) {
-			if (out != null) {
+			if (out != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: out");
-			}
 			out = (java.lang.Object) serviceObject;
 			return;
 		}
@@ -149,13 +150,11 @@ public abstract class SynchronousProxyConnectorStub extends org.archstudio.myx.f
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		if (interfaceName.equals(OUT_OUT)) {
-			if (out == null) {
+			if (out == null)
 				throw new IllegalStateException("A connection was never made on interface: out");
-			}
 			out = null;
 			return;
 		}

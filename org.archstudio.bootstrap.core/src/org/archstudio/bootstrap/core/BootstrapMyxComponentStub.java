@@ -5,13 +5,16 @@ import org.archstudio.myx.fw.MyxRegistry;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "Bootstrap Impl" MyxGen extension in the org.archstudio.bootstrap.core plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "Bootstrap Impl" MyxGen 
+ * extension in the org.archstudio.bootstrap.core plugin.
  */
 
 /**
  * Abstract Myx brick: Bootstrap Impl
- *
+ * 
  * @generated
  */
 public abstract class BootstrapMyxComponentStub extends org.archstudio.myx.fw.AbstractMyxSimpleBrick
@@ -47,7 +50,7 @@ public abstract class BootstrapMyxComponentStub extends org.archstudio.myx.fw.Ab
 
 	/**
 	 * Myx name for the <code>xarch</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_XARCH = MyxUtils.createName("xarch");
@@ -75,7 +78,7 @@ public abstract class BootstrapMyxComponentStub extends org.archstudio.myx.fw.Ab
 
 	/**
 	 * Myx name for the <code>aim</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_AIM = MyxUtils.createName("aim");
@@ -120,22 +123,19 @@ public abstract class BootstrapMyxComponentStub extends org.archstudio.myx.fw.Ab
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		if (interfaceName.equals(OUT_XARCH)) {
-			if (xarch != null) {
+			if (xarch != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: xarch");
-			}
 			xarch = (org.archstudio.xarchadt.IXArchADT) serviceObject;
 			return;
 		}
 
 		if (interfaceName.equals(OUT_AIM)) {
-			if (aim != null) {
+			if (aim != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: aim");
-			}
 			aim = (org.archstudio.aim.IAIM) serviceObject;
 			return;
 		}
@@ -152,20 +152,17 @@ public abstract class BootstrapMyxComponentStub extends org.archstudio.myx.fw.Ab
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		if (interfaceName.equals(OUT_XARCH)) {
-			if (xarch == null) {
+			if (xarch == null)
 				throw new IllegalStateException("A connection was never made on interface: xarch");
-			}
 			xarch = null;
 			return;
 		}
 		if (interfaceName.equals(OUT_AIM)) {
-			if (aim == null) {
+			if (aim == null)
 				throw new IllegalStateException("A connection was never made on interface: aim");
-			}
 			aim = null;
 			return;
 		}

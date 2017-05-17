@@ -5,13 +5,16 @@ import org.archstudio.myx.fw.MyxRegistry;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "Launcher Impl" MyxGen extension in the org.archstudio.launcher.core plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "Launcher Impl" MyxGen 
+ * extension in the org.archstudio.launcher.core plugin.
  */
 
 /**
  * Abstract Myx brick: Launcher Impl
- *
+ * 
  * @generated
  */
 public abstract class LauncherMyxComponentStub extends org.archstudio.myx.fw.AbstractMyxSimpleBrick
@@ -47,7 +50,7 @@ public abstract class LauncherMyxComponentStub extends org.archstudio.myx.fw.Abs
 
 	/**
 	 * Myx name for the <code>results</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_RESULTS = MyxUtils.createName("results");
@@ -75,7 +78,7 @@ public abstract class LauncherMyxComponentStub extends org.archstudio.myx.fw.Abs
 
 	/**
 	 * Myx name for the <code>launcher</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_LAUNCHER = MyxUtils.createName("launcher");
@@ -103,7 +106,7 @@ public abstract class LauncherMyxComponentStub extends org.archstudio.myx.fw.Abs
 
 	/**
 	 * Myx name for the <code>resources</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_RESOURCES = MyxUtils.createName("resources");
@@ -149,30 +152,26 @@ public abstract class LauncherMyxComponentStub extends org.archstudio.myx.fw.Abs
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		if (interfaceName.equals(OUT_RESULTS)) {
-			if (results != null) {
+			if (results != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: results");
-			}
 			results = (org.archstudio.myx.java.conn.IMultiwayResults) serviceObject;
 			return;
 		}
 
 		if (interfaceName.equals(OUT_LAUNCHER)) {
-			if (launcher != null) {
+			if (launcher != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: launcher");
-			}
 			launcher = (org.archstudio.launcher.ILaunchable) serviceObject;
 			return;
 		}
 
 		if (interfaceName.equals(OUT_RESOURCES)) {
-			if (resources != null) {
+			if (resources != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: resources");
-			}
 			resources = (org.archstudio.resources.IResources) serviceObject;
 			return;
 		}
@@ -190,27 +189,23 @@ public abstract class LauncherMyxComponentStub extends org.archstudio.myx.fw.Abs
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		if (interfaceName.equals(OUT_RESULTS)) {
-			if (results == null) {
+			if (results == null)
 				throw new IllegalStateException("A connection was never made on interface: results");
-			}
 			results = null;
 			return;
 		}
 		if (interfaceName.equals(OUT_LAUNCHER)) {
-			if (launcher == null) {
+			if (launcher == null)
 				throw new IllegalStateException("A connection was never made on interface: launcher");
-			}
 			launcher = null;
 			return;
 		}
 		if (interfaceName.equals(OUT_RESOURCES)) {
-			if (resources == null) {
+			if (resources == null)
 				throw new IllegalStateException("A connection was never made on interface: resources");
-			}
 			resources = null;
 			return;
 		}

@@ -5,13 +5,16 @@ import org.archstudio.myx.fw.MyxRegistry;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "Event Pump Impl" MyxGen extension in the org.archstudio.myx.java plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "Event Pump Impl" MyxGen 
+ * extension in the org.archstudio.myx.java plugin.
  */
 
 /**
  * Abstract Myx brick: Event Pump Impl
- *
+ * 
  * @generated
  */
 public abstract class EventPumpConnectorStub extends org.archstudio.myx.fw.AbstractMyxSimpleBrick
@@ -47,7 +50,7 @@ public abstract class EventPumpConnectorStub extends org.archstudio.myx.fw.Abstr
 
 	/**
 	 * Myx name for the <code>in</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_IN = MyxUtils.createName("in");
@@ -75,7 +78,7 @@ public abstract class EventPumpConnectorStub extends org.archstudio.myx.fw.Abstr
 
 	/**
 	 * Myx name for the <code>out</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_OUT = MyxUtils.createName("out");
@@ -86,8 +89,7 @@ public abstract class EventPumpConnectorStub extends org.archstudio.myx.fw.Abstr
 	 * @see #OUT_OUT
 	 * @generated
 	 */
-	protected final java.util.Collection<java.lang.Object> out =
-			new java.util.concurrent.CopyOnWriteArrayList<java.lang.Object>();
+	protected final java.util.Collection<java.lang.Object> out = new java.util.concurrent.CopyOnWriteArrayList<java.lang.Object>();
 
 	/**
 	 * Returns the service object(s) for the out interface.
@@ -124,9 +126,8 @@ public abstract class EventPumpConnectorStub extends org.archstudio.myx.fw.Abstr
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		if (interfaceName.equals(OUT_OUT)) {
 			out.add((java.lang.Object) serviceObject);
@@ -144,9 +145,8 @@ public abstract class EventPumpConnectorStub extends org.archstudio.myx.fw.Abstr
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		if (interfaceName.equals(OUT_OUT)) {
 			out.remove(serviceObject);
 			return;

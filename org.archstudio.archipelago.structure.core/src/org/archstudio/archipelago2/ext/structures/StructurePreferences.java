@@ -17,6 +17,23 @@ public class StructurePreferences extends FieldEditorPreferencePage
       "org.archstudio.archipelago2.ext.structures.componentColor";
   public static final String PREF_COMPONENT_FONT =
       "org.archstudio.archipelago2.ext.structures.componentFont";
+  
+  
+  public static final String PREF_COALAGENT_COLOR =
+	      "org.archstudio.archipelago2.ext.structures.coalAgentColor";
+  public static final String PREF_COALAGENT_FONT =
+	      "org.archstudio.archipelago2.ext.structures.coalAgentFont";
+  
+  public static final String PREF_FUNAGENT_COLOR =
+	      "org.archstudio.archipelago2.ext.structures.funAgentColor";
+  public static final String PREF_FUNAGENT_FONT =
+	      "org.archstudio.archipelago2.ext.structures.funAgentFont";
+  public static final String PREF_ENCAPSULATEDUNIT_COLOR =
+	      "org.archstudio.archipelago2.ext.structures.encapsulatedUnitColor";
+  public static final String PREF_ENCAPSULATEDUNIT_FONT =
+	      "org.archstudio.archipelago2.ext.structures.encapsulatedUnitFont";
+  
+  
   public static final String PREF_CONNECTOR_COLOR =
       "org.archstudio.archipelago2.ext.structures.connectorColor";
   public static final String PREF_CONNECTOR_FONT =
@@ -33,6 +50,33 @@ public class StructurePreferences extends FieldEditorPreferencePage
   public static FontData getComponentFont() {
     return PreferenceConverter.getFontData(getActivatorPreferenceStore(), PREF_COMPONENT_FONT);
   }
+
+  
+  
+  public static RGB getCoalAgentColor() {
+	    return PreferenceConverter.getColor(getActivatorPreferenceStore(), PREF_COALAGENT_COLOR);
+	  }
+
+public static FontData getCoalAgentFont() {
+	    return PreferenceConverter.getFontData(getActivatorPreferenceStore(), PREF_COALAGENT_FONT);
+	  }
+
+
+public static FontData getFunAgentFont() {
+	    return PreferenceConverter.getFontData(getActivatorPreferenceStore(), PREF_FUNAGENT_FONT);
+	  }
+public static RGB getFunAgentColor() {
+  return PreferenceConverter.getColor(getActivatorPreferenceStore(), PREF_FUNAGENT_COLOR);
+}
+
+public static RGB getEncapsulatedUnitColor() {
+	    return PreferenceConverter.getColor(getActivatorPreferenceStore(), PREF_ENCAPSULATEDUNIT_COLOR);
+	  }
+public static FontData getEncapsulatedUnitFont() {
+  return PreferenceConverter.getFontData(getActivatorPreferenceStore(), PREF_ENCAPSULATEDUNIT_FONT);
+}
+
+
 
   public static RGB getConnectorColor() {
     return PreferenceConverter.getColor(getActivatorPreferenceStore(), PREF_CONNECTOR_COLOR);
@@ -58,6 +102,22 @@ public class StructurePreferences extends FieldEditorPreferencePage
         getFieldEditorParent()));
     addField(new ColorFieldEditor(PREF_COMPONENT_COLOR, "Default Component Color:",
         getFieldEditorParent()));
+    
+    
+    addField(new FontFieldEditor(PREF_COALAGENT_FONT, "Default CoalAgent Font:",
+            getFieldEditorParent()));
+    addField(new ColorFieldEditor(PREF_COALAGENT_COLOR, "Default CoalAgent Color:",
+            getFieldEditorParent()));
+    addField(new FontFieldEditor(PREF_FUNAGENT_FONT, "Default FunAgent Font:",
+            getFieldEditorParent()));
+    addField(new ColorFieldEditor(PREF_FUNAGENT_COLOR, "Default FunAgent Color:",
+            getFieldEditorParent()));
+    addField(new FontFieldEditor(PREF_ENCAPSULATEDUNIT_FONT, "Default EncapsulatedUnit Font:",
+            getFieldEditorParent()));
+    addField(new ColorFieldEditor(PREF_ENCAPSULATEDUNIT_COLOR, "Default EncapsulatedUnit Color:",
+            getFieldEditorParent()));
+    
+    
     addField(new FontFieldEditor(PREF_CONNECTOR_FONT, "Default Connector Font:",
         getFieldEditorParent()));
     addField(new ColorFieldEditor(PREF_CONNECTOR_COLOR, "Default Connector Color:",

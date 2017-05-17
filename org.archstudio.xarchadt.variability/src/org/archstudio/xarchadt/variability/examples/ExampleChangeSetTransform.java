@@ -6,6 +6,10 @@ import java.net.UnknownHostException;
 import org.archstudio.ljm.LJMException;
 import org.archstudio.ljm.LJMProxyFactory;
 import org.archstudio.xadl3.structure_3_0.Component;
+
+import org.archstudio.xadl3.structure_3_0.CoalAgent;
+import org.archstudio.xadl3.structure_3_0.FunAgent;
+import org.archstudio.xadl3.structure_3_0.EncapsulatedUnit;
 import org.archstudio.xadl3.structure_3_0.Connector;
 import org.archstudio.xadl3.structure_3_0.Direction;
 import org.archstudio.xadl3.structure_3_0.Interface;
@@ -40,6 +44,24 @@ public class ExampleChangeSetTransform implements ChangeSetTransform {
 							i.setDirection(getOpposite(i.getDirection()));
 						}
 					}
+					for (CoalAgent c : structure.getCoalAgent()) {
+						for (Interface i : c.getInterface()) {
+							i.setDirection(getOpposite(i.getDirection()));
+						}
+					}
+					
+					for (FunAgent c : structure.getFunAgent()) {
+						for (Interface i : c.getInterface()) {
+							i.setDirection(getOpposite(i.getDirection()));
+						}
+					}
+					for (EncapsulatedUnit c : structure.getEncapsulatedUnit()) {
+						for (Interface i : c.getInterface()) {
+							i.setDirection(getOpposite(i.getDirection()));
+						}
+					}
+					
+					
 					for (Connector c : structure.getConnector()) {
 						for (Interface i : c.getInterface()) {
 							i.setDirection(getOpposite(i.getDirection()));

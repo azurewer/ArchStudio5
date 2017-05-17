@@ -3,10 +3,13 @@
 package org.archstudio.xadl3.structure_3_0.impl;
 
 import org.archstudio.xadl3.structure_3_0.Brick;
+import org.archstudio.xadl3.structure_3_0.CoalAgent;
 import org.archstudio.xadl3.structure_3_0.Component;
 import org.archstudio.xadl3.structure_3_0.Connector;
 import org.archstudio.xadl3.structure_3_0.Direction;
 import org.archstudio.xadl3.structure_3_0.DocumentRoot;
+import org.archstudio.xadl3.structure_3_0.EncapsulatedUnit;
+import org.archstudio.xadl3.structure_3_0.FunAgent;
 import org.archstudio.xadl3.structure_3_0.Interface;
 import org.archstudio.xadl3.structure_3_0.InterfaceMapping;
 import org.archstudio.xadl3.structure_3_0.Link;
@@ -28,7 +31,8 @@ import org.w3.xlink.XlinkPackage;
 import org.w3.xlink.impl.XlinkPackageImpl;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model <b>Package</b>. <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model <b>Package</b>. <!--
+ * end-user-doc -->
  * 
  * @generated
  */
@@ -39,6 +43,13 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 	 * @generated
 	 */
 	private EClass brickEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass coalAgentEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -60,6 +71,20 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 	 * @generated
 	 */
 	private EClass documentRootEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass encapsulatedUnitEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass funAgentEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -111,11 +136,13 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 	private EDataType directionObjectEDataType = null;
 
 	/**
-	 * Creates an instance of the model <b>Package</b>, registered with {@link org.eclipse.emf.ecore.EPackage.Registry
-	 * EPackage.Registry} by the package package URI value.
+	 * Creates an instance of the model <b>Package</b>, registered with
+	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the
+	 * package package URI value.
 	 * <p>
-	 * Note: the correct way to create the package is via the static factory method {@link #init init()}, which also
-	 * performs initialization of the package, or returns the registered package, if one already exists. <!--
+	 * Note: the correct way to create the package is via the static factory
+	 * method {@link #init init()}, which also performs initialization of the
+	 * package, or returns the registered package, if one already exists. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
@@ -135,10 +162,13 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 	private static boolean isInited = false;
 
 	/**
-	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+	 * Creates, registers, and initializes the <b>Package</b> for this model,
+	 * and for any others upon which it depends.
+	 * 
 	 * <p>
-	 * This method is used to initialize {@link Structure_3_0Package#eINSTANCE} when that field is accessed. Clients
-	 * should not invoke it directly. Instead, they should simply access that field to obtain the package. <!--
+	 * This method is used to initialize {@link Structure_3_0Package#eINSTANCE}
+	 * when that field is accessed. Clients should not invoke it directly.
+	 * Instead, they should simply access that field to obtain the package. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #eNS_URI
@@ -147,14 +177,13 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 	 * @generated
 	 */
 	public static Structure_3_0Package init() {
-		if (isInited) {
+		if (isInited)
 			return (Structure_3_0Package) EPackage.Registry.INSTANCE.getEPackage(Structure_3_0Package.eNS_URI);
-		}
 
 		// Obtain or create and register package
-		Structure_3_0PackageImpl theStructure_3_0Package =
-				(Structure_3_0PackageImpl) (EPackage.Registry.INSTANCE.get(eNS_URI) instanceof Structure_3_0PackageImpl
-						? EPackage.Registry.INSTANCE.get(eNS_URI) : new Structure_3_0PackageImpl());
+		Structure_3_0PackageImpl theStructure_3_0Package = (Structure_3_0PackageImpl) (EPackage.Registry.INSTANCE
+				.get(eNS_URI) instanceof Structure_3_0PackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI)
+						: new Structure_3_0PackageImpl());
 
 		isInited = true;
 
@@ -254,6 +283,16 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 	 * @generated
 	 */
 	@Override
+	public EClass getCoalAgent() {
+		return coalAgentEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
 	public EClass getComponent() {
 		return componentEClass;
 	}
@@ -316,6 +355,26 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 	@Override
 	public EReference getDocumentRoot_Structure() {
 		return (EReference) documentRootEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getEncapsulatedUnit() {
+		return encapsulatedUnitEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getFunAgent() {
+		return funAgentEClass;
 	}
 
 	/**
@@ -514,7 +573,7 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 	 * @generated
 	 */
 	@Override
-	public EReference getStructure_Connector() {
+	public EReference getStructure_CoalAgent() {
 		return (EReference) structureEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -524,7 +583,7 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 	 * @generated
 	 */
 	@Override
-	public EReference getStructure_Link() {
+	public EReference getStructure_FunAgent() {
 		return (EReference) structureEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -534,7 +593,7 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 	 * @generated
 	 */
 	@Override
-	public EReference getStructure_Ext() {
+	public EReference getStructure_EncapsulatedUnit() {
 		return (EReference) structureEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -544,8 +603,38 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 	 * @generated
 	 */
 	@Override
+	public EReference getStructure_Connector() {
+		return (EReference) structureEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EReference getStructure_Link() {
+		return (EReference) structureEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EReference getStructure_Ext() {
+		return (EReference) structureEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
 	public EAttribute getStructure_Id() {
-		return (EAttribute) structureEClass.getEStructuralFeatures().get(4);
+		return (EAttribute) structureEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -555,7 +644,7 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 	 */
 	@Override
 	public EAttribute getStructure_Name() {
-		return (EAttribute) structureEClass.getEStructuralFeatures().get(5);
+		return (EAttribute) structureEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -646,15 +735,15 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 	private boolean isCreated = false;
 
 	/**
-	 * Creates the meta-model objects for the package. This method is guarded to have no affect on any invocation but
-	 * its first. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * Creates the meta-model objects for the package. This method is guarded to
+	 * have no affect on any invocation but its first. <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * 
 	 * @generated
 	 */
 	public void createPackageContents() {
-		if (isCreated) {
+		if (isCreated)
 			return;
-		}
 		isCreated = true;
 
 		// Create classes and their features
@@ -665,6 +754,8 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 		createEAttribute(brickEClass, BRICK__ID);
 		createEAttribute(brickEClass, BRICK__NAME);
 
+		coalAgentEClass = createEClass(COAL_AGENT);
+
 		componentEClass = createEClass(COMPONENT);
 
 		connectorEClass = createEClass(CONNECTOR);
@@ -674,6 +765,10 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 		createEReference(documentRootEClass, DOCUMENT_ROOT__XMLNS_PREFIX_MAP);
 		createEReference(documentRootEClass, DOCUMENT_ROOT__XSI_SCHEMA_LOCATION);
 		createEReference(documentRootEClass, DOCUMENT_ROOT__STRUCTURE);
+
+		encapsulatedUnitEClass = createEClass(ENCAPSULATED_UNIT);
+
+		funAgentEClass = createEClass(FUN_AGENT);
 
 		interfaceEClass = createEClass(INTERFACE);
 		createEReference(interfaceEClass, INTERFACE__EXT);
@@ -697,6 +792,9 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 
 		structureEClass = createEClass(STRUCTURE);
 		createEReference(structureEClass, STRUCTURE__COMPONENT);
+		createEReference(structureEClass, STRUCTURE__COAL_AGENT);
+		createEReference(structureEClass, STRUCTURE__FUN_AGENT);
+		createEReference(structureEClass, STRUCTURE__ENCAPSULATED_UNIT);
 		createEReference(structureEClass, STRUCTURE__CONNECTOR);
 		createEReference(structureEClass, STRUCTURE__LINK);
 		createEReference(structureEClass, STRUCTURE__EXT);
@@ -724,15 +822,15 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 	private boolean isInitialized = false;
 
 	/**
-	 * Complete the initialization of the package and its meta-model. This method is guarded to have no affect on any
-	 * invocation but its first. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * Complete the initialization of the package and its meta-model. This
+	 * method is guarded to have no affect on any invocation but its first. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated
 	 */
 	public void initializePackageContents() {
-		if (isInitialized) {
+		if (isInitialized)
 			return;
-		}
 		isInitialized = true;
 
 		// Initialize package
@@ -741,18 +839,21 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		Xadlcore_3_0Package theXadlcore_3_0Package =
-				(Xadlcore_3_0Package) EPackage.Registry.INSTANCE.getEPackage(Xadlcore_3_0Package.eNS_URI);
-		XMLTypePackage theXMLTypePackage =
-				(XMLTypePackage) EPackage.Registry.INSTANCE.getEPackage(XMLTypePackage.eNS_URI);
+		Xadlcore_3_0Package theXadlcore_3_0Package = (Xadlcore_3_0Package) EPackage.Registry.INSTANCE
+				.getEPackage(Xadlcore_3_0Package.eNS_URI);
+		XMLTypePackage theXMLTypePackage = (XMLTypePackage) EPackage.Registry.INSTANCE
+				.getEPackage(XMLTypePackage.eNS_URI);
 
 		// Create type parameters
 
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		coalAgentEClass.getESuperTypes().add(this.getBrick());
 		componentEClass.getESuperTypes().add(this.getBrick());
 		connectorEClass.getESuperTypes().add(this.getBrick());
+		encapsulatedUnitEClass.getESuperTypes().add(this.getBrick());
+		funAgentEClass.getESuperTypes().add(this.getBrick());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(brickEClass, Brick.class, "Brick", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -769,6 +870,9 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBrick_Name(), theXMLTypePackage.getString(), "name", null, 0, 1, Brick.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(coalAgentEClass, CoalAgent.class, "CoalAgent", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(componentEClass, Component.class, "Component", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -790,6 +894,12 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 		initEReference(getDocumentRoot_Structure(), this.getStructure(), null, "structure", null, 0, -2, null,
 				IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
 				IS_DERIVED, IS_ORDERED);
+
+		initEClass(encapsulatedUnitEClass, EncapsulatedUnit.class, "EncapsulatedUnit", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(funAgentEClass, FunAgent.class, "FunAgent", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(interfaceEClass, Interface.class, "Interface", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -840,6 +950,15 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 		initEReference(getStructure_Component(), this.getComponent(), null, "component", null, 0, -1, Structure.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getStructure_CoalAgent(), this.getCoalAgent(), null, "coalAgent", null, 0, -1, Structure.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getStructure_FunAgent(), this.getFunAgent(), null, "funAgent", null, 0, -1, Structure.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getStructure_EncapsulatedUnit(), this.getEncapsulatedUnit(), null, "encapsulatedUnit", null, 0,
+				-1, Structure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getStructure_Connector(), this.getConnector(), null, "connector", null, 0, -1, Structure.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -888,8 +1007,9 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 	}
 
 	/**
-	 * Initializes the annotations for <b>http:///org/eclipse/emf/ecore/util/ExtendedMetaData</b>. <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+	 * Initializes the annotations for
+	 * <b>http:///org/eclipse/emf/ecore/util/ExtendedMetaData</b>. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated
 	 */
@@ -906,6 +1026,7 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 				new String[] { "kind", "attribute", "name", "id", "namespace", "##targetNamespace" });
 		addAnnotation(getBrick_Name(), source,
 				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
+		addAnnotation(coalAgentEClass, source, new String[] { "name", "CoalAgent", "kind", "elementOnly" });
 		addAnnotation(componentEClass, source, new String[] { "name", "Component", "kind", "elementOnly" });
 		addAnnotation(connectorEClass, source, new String[] { "name", "Connector", "kind", "elementOnly" });
 		addAnnotation(directionEEnum, source, new String[] { "name", "Direction" });
@@ -920,6 +1041,9 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 		addAnnotation(getDocumentRoot_Structure(), source,
 				new String[] { "kind", "element", "name", "structure", "namespace", "##targetNamespace", "affiliation",
 						"http://www.archstudio.org/xadl3/schemas/xadlcore-3.0.xsd#topLevelElement" });
+		addAnnotation(encapsulatedUnitEClass, source,
+				new String[] { "name", "EncapsulatedUnit", "kind", "elementOnly" });
+		addAnnotation(funAgentEClass, source, new String[] { "name", "FunAgent", "kind", "elementOnly" });
 		addAnnotation(interfaceEClass, source, new String[] { "name", "Interface", "kind", "elementOnly" });
 		addAnnotation(getInterface_Ext(), source,
 				new String[] { "kind", "element", "name", "ext", "namespace", "##targetNamespace" });
@@ -955,6 +1079,12 @@ public class Structure_3_0PackageImpl extends EPackageImpl implements Structure_
 		addAnnotation(structureEClass, source, new String[] { "name", "Structure", "kind", "elementOnly" });
 		addAnnotation(getStructure_Component(), source,
 				new String[] { "kind", "element", "name", "component", "namespace", "##targetNamespace" });
+		addAnnotation(getStructure_CoalAgent(), source,
+				new String[] { "kind", "element", "name", "coalAgent", "namespace", "##targetNamespace" });
+		addAnnotation(getStructure_FunAgent(), source,
+				new String[] { "kind", "element", "name", "funAgent", "namespace", "##targetNamespace" });
+		addAnnotation(getStructure_EncapsulatedUnit(), source,
+				new String[] { "kind", "element", "name", "encapsulatedUnit", "namespace", "##targetNamespace" });
 		addAnnotation(getStructure_Connector(), source,
 				new String[] { "kind", "element", "name", "connector", "namespace", "##targetNamespace" });
 		addAnnotation(getStructure_Link(), source,

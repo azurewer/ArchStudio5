@@ -108,6 +108,18 @@ public class AIMInstantiationOrderCalculator {
 		for (ObjRef brickRef : Iterables.filter(xarch.getAll(structureRef, "component"), ObjRef.class)) {
 			brickNodes.put(brickRef, new BrickNode(brickRef));
 		}
+		
+		for (ObjRef brickRef : Iterables.filter(xarch.getAll(structureRef, "coalAgent"), ObjRef.class)) {
+			brickNodes.put(brickRef, new BrickNode(brickRef));
+		}
+		for (ObjRef brickRef : Iterables.filter(xarch.getAll(structureRef, "funAgent"), ObjRef.class)) {
+			brickNodes.put(brickRef, new BrickNode(brickRef));
+		}
+		for (ObjRef brickRef : Iterables.filter(xarch.getAll(structureRef, "encapsulatedUnit"), ObjRef.class)) {
+			brickNodes.put(brickRef, new BrickNode(brickRef));
+		}
+		
+		
 		for (ObjRef brickRef : Iterables.filter(xarch.getAll(structureRef, "connector"), ObjRef.class)) {
 			brickNodes.put(brickRef, new BrickNode(brickRef));
 		}

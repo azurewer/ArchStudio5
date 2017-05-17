@@ -19,23 +19,28 @@ import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '<em><b>Interface</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Interface</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.InterfaceImpl#getExt <em>Ext</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.InterfaceImpl#getDirection <em>Direction</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.InterfaceImpl#getId <em>Id</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.InterfaceImpl#getName <em>Name</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.InterfaceImpl#getExt
+ * <em>Ext</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.InterfaceImpl#getDirection
+ * <em>Direction</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.InterfaceImpl#getId
+ * <em>Id</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.InterfaceImpl#getName
+ * <em>Name</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class InterfaceImpl extends MinimalEObjectImpl.Container implements Interface {
 	/**
-	 * The cached value of the '{@link #getExt() <em>Ext</em>}' containment reference list. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * The cached value of the '{@link #getExt() <em>Ext</em>}' containment
+	 * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getExt()
 	 * @generated
@@ -44,8 +49,8 @@ public class InterfaceImpl extends MinimalEObjectImpl.Container implements Inter
 	protected EList<Extension> ext;
 
 	/**
-	 * The default value of the '{@link #getDirection() <em>Direction</em>}' attribute. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * The default value of the '{@link #getDirection() <em>Direction</em>}'
+	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getDirection()
 	 * @generated
@@ -54,8 +59,8 @@ public class InterfaceImpl extends MinimalEObjectImpl.Container implements Inter
 	protected static final Direction DIRECTION_EDEFAULT = Direction.NONE;
 
 	/**
-	 * The cached value of the '{@link #getDirection() <em>Direction</em>}' attribute. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * The cached value of the '{@link #getDirection() <em>Direction</em>}'
+	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getDirection()
 	 * @generated
@@ -64,7 +69,8 @@ public class InterfaceImpl extends MinimalEObjectImpl.Container implements Inter
 	protected Direction direction = DIRECTION_EDEFAULT;
 
 	/**
-	 * This is true if the Direction attribute has been set. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * This is true if the Direction attribute has been set. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
 	 * 
 	 * @generated
 	 * @ordered
@@ -72,7 +78,8 @@ public class InterfaceImpl extends MinimalEObjectImpl.Container implements Inter
 	protected boolean directionESet;
 
 	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getId()
 	 * @generated
@@ -81,7 +88,8 @@ public class InterfaceImpl extends MinimalEObjectImpl.Container implements Inter
 	protected static final String ID_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getId()
 	 * @generated
@@ -90,8 +98,8 @@ public class InterfaceImpl extends MinimalEObjectImpl.Container implements Inter
 	protected String id = ID_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getName()
 	 * @generated
@@ -100,8 +108,8 @@ public class InterfaceImpl extends MinimalEObjectImpl.Container implements Inter
 	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getName()
 	 * @generated
@@ -162,10 +170,9 @@ public class InterfaceImpl extends MinimalEObjectImpl.Container implements Inter
 		direction = newDirection == null ? DIRECTION_EDEFAULT : newDirection;
 		boolean oldDirectionESet = directionESet;
 		directionESet = true;
-		if (eNotificationRequired()) {
+		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Structure_3_0Package.INTERFACE__DIRECTION,
 					oldDirection, direction, !oldDirectionESet));
-		}
 	}
 
 	/**
@@ -179,10 +186,9 @@ public class InterfaceImpl extends MinimalEObjectImpl.Container implements Inter
 		boolean oldDirectionESet = directionESet;
 		direction = DIRECTION_EDEFAULT;
 		directionESet = false;
-		if (eNotificationRequired()) {
+		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET, Structure_3_0Package.INTERFACE__DIRECTION,
 					oldDirection, DIRECTION_EDEFAULT, oldDirectionESet));
-		}
 	}
 
 	/**
@@ -214,9 +220,8 @@ public class InterfaceImpl extends MinimalEObjectImpl.Container implements Inter
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
-		if (eNotificationRequired()) {
+		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Structure_3_0Package.INTERFACE__ID, oldId, id));
-		}
 	}
 
 	/**
@@ -238,9 +243,8 @@ public class InterfaceImpl extends MinimalEObjectImpl.Container implements Inter
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
-		if (eNotificationRequired()) {
+		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Structure_3_0Package.INTERFACE__NAME, oldName, name));
-		}
 	}
 
 	/**
@@ -354,18 +358,15 @@ public class InterfaceImpl extends MinimalEObjectImpl.Container implements Inter
 	 */
 	@Override
 	public String toString() {
-		if (eIsProxy()) {
+		if (eIsProxy())
 			return super.toString();
-		}
 
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (direction: ");
-		if (directionESet) {
+		if (directionESet)
 			result.append(direction);
-		}
-		else {
+		else
 			result.append("<unset>");
-		}
 		result.append(", id: ");
 		result.append(id);
 		result.append(", name: ");

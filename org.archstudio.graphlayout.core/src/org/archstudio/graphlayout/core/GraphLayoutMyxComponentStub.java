@@ -5,13 +5,16 @@ import org.archstudio.myx.fw.MyxRegistry;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "Graph Layout Impl" MyxGen extension in the org.archstudio.graphlayout.core plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "Graph Layout Impl" MyxGen 
+ * extension in the org.archstudio.graphlayout.core plugin.
  */
 
 /**
  * Abstract Myx brick: Graph Layout Impl
- *
+ * 
  * @generated
  */
 public abstract class GraphLayoutMyxComponentStub extends org.archstudio.myx.fw.AbstractMyxSimpleBrick
@@ -47,7 +50,7 @@ public abstract class GraphLayoutMyxComponentStub extends org.archstudio.myx.fw.
 
 	/**
 	 * Myx name for the <code>graphLayout</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_GRAPH_LAYOUT = MyxUtils.createName("graphLayout");
@@ -75,7 +78,7 @@ public abstract class GraphLayoutMyxComponentStub extends org.archstudio.myx.fw.
 
 	/**
 	 * Myx name for the <code>xarch</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_XARCH = MyxUtils.createName("xarch");
@@ -126,14 +129,12 @@ public abstract class GraphLayoutMyxComponentStub extends org.archstudio.myx.fw.
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		if (interfaceName.equals(OUT_XARCH)) {
-			if (xarch != null) {
+			if (xarch != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: xarch");
-			}
 			xarch = (org.archstudio.xarchadt.IXArchADT) serviceObject;
 			return;
 		}
@@ -149,13 +150,11 @@ public abstract class GraphLayoutMyxComponentStub extends org.archstudio.myx.fw.
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		if (interfaceName.equals(OUT_XARCH)) {
-			if (xarch == null) {
+			if (xarch == null)
 				throw new IllegalStateException("A connection was never made on interface: xarch");
-			}
 			xarch = null;
 			return;
 		}

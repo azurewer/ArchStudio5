@@ -113,10 +113,31 @@ public class XadlTreeContentProvider implements ITreeContentProvider {
 			else if (type.equals(Type.STRUCTURE)) {
 				addChildren(childList, ref, "component", Type.COMPONENT);
 				addChildren(childList, ref, "connector", Type.CONNECTOR);
+				
+				//***************wjw201705***************//
+				addChildren(childList, ref, "coalAgent", Type.COALAGENT);
+				addChildren(childList, ref, "funAgent", Type.FUNAGENT);
+				addChildren(childList, ref, "encapsulatedUnit", Type.ENCAPSULATEDUNIT);
+				//***************wjw201705***************//
+				
 			}
 			else if (type.equals(Type.COMPONENT)) {
 				addChildren(childList, ref, "interface", Type.COMPONENT_INTERFACE);
 			}
+			
+			//***************wjw201705***************//
+			else if (type.equals(Type.COALAGENT)) {
+				addChildren(childList, ref, "interface", Type.COALAGENT_INTERFACE);
+			}
+			
+			else if (type.equals(Type.FUNAGENT)) {
+				addChildren(childList, ref, "interface", Type.FUNAGENT_INTERFACE);
+			}
+			else if (type.equals(Type.ENCAPSULATEDUNIT)) {
+				addChildren(childList, ref, "interface", Type.ENCAPSULATEDUNIT);
+			}
+			//***************wjw201705***************//
+			
 			else if (type.equals(Type.CONNECTOR)) {
 				addChildren(childList, ref, "interface", Type.CONNECTOR_INTERFACE);
 			}

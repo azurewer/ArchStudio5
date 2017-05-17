@@ -18,6 +18,11 @@ import org.archstudio.xadl.XadlUtils;
 import org.archstudio.xadl.bna.facets.IHasObjRef;
 import org.archstudio.xadl.bna.utils.XArchADTOperations;
 import org.archstudio.xadl3.structure_3_0.Component;
+
+import org.archstudio.xadl3.structure_3_0.CoalAgent;
+import org.archstudio.xadl3.structure_3_0.FunAgent;
+import org.archstudio.xadl3.structure_3_0.EncapsulatedUnit;
+
 import org.archstudio.xadl3.structure_3_0.Connector;
 import org.archstudio.xadl3.structure_3_0.Direction;
 import org.archstudio.xadl3.structure_3_0.Interface;
@@ -92,6 +97,92 @@ public class MenuContributor {
     });
   }
 
+  //*********************201705wjw modified*********************
+  public static final void addNewCoalAgentAction(IMenuManager menuManager, final IXArchADT xarch,
+	      final ObjRef structureRef, @Nullable final IArchipelago2Outline outline,
+	      @Nullable final List<Object> parentElement) {
+	    Preconditions.checkNotNull(menuManager);
+	    Preconditions.checkNotNull(xarch);
+	    Preconditions.checkNotNull(structureRef);
+	    menuManager.appendToGroup(IBNAMenuListener2.NEW_ELEMENTS_GROUP, new Action("New CoalAgent") {
+	      @Override
+	      public void run() {
+	        ObjRef newRef = XadlUtils.create(xarch, Structure_3_0Package.Literals.COALAGENT);
+	        xarch.set(newRef, "id", UIDGenerator.generateUID());
+	        XadlUtils.setName(xarch, newRef, "[New CoalAgent]");
+	        XArchADTOperations.add("Add CoalAgent", xarch, structureRef, "coalAgent", newRef);
+	        if (outline != null && parentElement != null) {
+	          List<Object> element = Archipelago2Utils.append(parentElement, newRef);
+	          outline.selectElement(element);
+	          outline.editElement(element, 0);
+	        }
+	      }
+
+	      @Override
+	      public ImageDescriptor getImageDescriptor() {
+	        return ImageUtils
+	            .toImageDescriptor(ImageUtils.getIcon16ForType(Display.getDefault(), CoalAgent.class));
+	      }
+	    });
+	  }
+  
+  //*********************201705wjw modified*********************
+  public static final void addNewFunAgentAction(IMenuManager menuManager, final IXArchADT xarch,
+	      final ObjRef structureRef, @Nullable final IArchipelago2Outline outline,
+	      @Nullable final List<Object> parentElement) {
+	    Preconditions.checkNotNull(menuManager);
+	    Preconditions.checkNotNull(xarch);
+	    Preconditions.checkNotNull(structureRef);
+	    menuManager.appendToGroup(IBNAMenuListener2.NEW_ELEMENTS_GROUP, new Action("New FunAgent") {
+	      @Override
+	      public void run() {
+	        ObjRef newRef = XadlUtils.create(xarch, Structure_3_0Package.Literals.FUNAGENT);
+	        xarch.set(newRef, "id", UIDGenerator.generateUID());
+	        XadlUtils.setName(xarch, newRef, "[New FunAgent]");
+	        XArchADTOperations.add("Add FunAgent", xarch, structureRef, "funAgent", newRef);
+	        if (outline != null && parentElement != null) {
+	          List<Object> element = Archipelago2Utils.append(parentElement, newRef);
+	          outline.selectElement(element);
+	          outline.editElement(element, 0);
+	        }
+	      }
+
+	      @Override
+	      public ImageDescriptor getImageDescriptor() {
+	        return ImageUtils
+	            .toImageDescriptor(ImageUtils.getIcon16ForType(Display.getDefault(), FunAgent.class));
+	      }
+	    });
+	  }
+//*********************201705wjw modified*********************
+  public static final void addNewEncapsulatedUnitAction(IMenuManager menuManager, final IXArchADT xarch,
+	      final ObjRef structureRef, @Nullable final IArchipelago2Outline outline,
+	      @Nullable final List<Object> parentElement) {
+	    Preconditions.checkNotNull(menuManager);
+	    Preconditions.checkNotNull(xarch);
+	    Preconditions.checkNotNull(structureRef);
+	    menuManager.appendToGroup(IBNAMenuListener2.NEW_ELEMENTS_GROUP, new Action("New EncapsulatedUnit") {
+	      @Override
+	      public void run() {
+	        ObjRef newRef = XadlUtils.create(xarch, Structure_3_0Package.Literals.ENCAPSULATEDUNIT);
+	        xarch.set(newRef, "id", UIDGenerator.generateUID());
+	        XadlUtils.setName(xarch, newRef, "[New EncapsulatedUnit]");
+	        XArchADTOperations.add("Add EncapsulatedUnit", xarch, structureRef, "encapsulatedUnit", newRef);
+	        if (outline != null && parentElement != null) {
+	          List<Object> element = Archipelago2Utils.append(parentElement, newRef);
+	          outline.selectElement(element);
+	          outline.editElement(element, 0);
+	        }
+	      }
+
+	      @Override
+	      public ImageDescriptor getImageDescriptor() {
+	        return ImageUtils
+	            .toImageDescriptor(ImageUtils.getIcon16ForType(Display.getDefault(), EncapsulatedUnit.class));
+	      }
+	    });
+	  }
+  
   public static final void addNewConnectorAction(IMenuManager menuManager, final IXArchADT xarch,
       final ObjRef structureRef, @Nullable final IArchipelago2Outline outline,
       @Nullable final List<Object> parentElement) {

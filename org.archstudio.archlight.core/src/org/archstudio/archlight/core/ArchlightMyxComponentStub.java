@@ -4,13 +4,16 @@ import org.archstudio.myx.fw.IMyxName;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "Archlight Impl" MyxGen extension in the org.archstudio.archlight.core plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "Archlight Impl" MyxGen 
+ * extension in the org.archstudio.archlight.core plugin.
  */
 
 /**
  * Abstract Myx brick: Archlight Impl
- *
+ * 
  * @generated
  */
 public abstract class ArchlightMyxComponentStub
@@ -28,7 +31,7 @@ public abstract class ArchlightMyxComponentStub
 
 	/**
 	 * Myx name for the <code>tools</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_TOOLS = MyxUtils.createName("tools");
@@ -56,7 +59,7 @@ public abstract class ArchlightMyxComponentStub
 
 	/**
 	 * Myx name for the <code>tests</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_TESTS = MyxUtils.createName("tests");
@@ -101,22 +104,19 @@ public abstract class ArchlightMyxComponentStub
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		if (interfaceName.equals(OUT_TOOLS)) {
-			if (tools != null) {
+			if (tools != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: tools");
-			}
 			tools = (org.archstudio.archlight.IArchlightTool) serviceObject;
 			return;
 		}
 
 		if (interfaceName.equals(OUT_TESTS)) {
-			if (tests != null) {
+			if (tests != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: tests");
-			}
 			tests = (org.archstudio.testadt.IArchlightTestADT) serviceObject;
 			return;
 		}
@@ -133,20 +133,17 @@ public abstract class ArchlightMyxComponentStub
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		if (interfaceName.equals(OUT_TOOLS)) {
-			if (tools == null) {
+			if (tools == null)
 				throw new IllegalStateException("A connection was never made on interface: tools");
-			}
 			tools = null;
 			return;
 		}
 		if (interfaceName.equals(OUT_TESTS)) {
-			if (tests == null) {
+			if (tests == null)
 				throw new IllegalStateException("A connection was never made on interface: tests");
-			}
 			tests = null;
 			return;
 		}

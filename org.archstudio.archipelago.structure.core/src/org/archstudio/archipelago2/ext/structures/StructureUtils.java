@@ -7,6 +7,12 @@ import org.archstudio.archipelago2.MyxRegistryToProxyLogicDelegate;
 import org.archstudio.archipelago2.ext.statecharts.logics.UpdateStatechartSpecLogic;
 import org.archstudio.archipelago2.ext.structures.logics.AssignMyxGenLogic;
 import org.archstudio.archipelago2.ext.structures.logics.MapComponentLogic;
+
+import org.archstudio.archipelago2.ext.structures.logics.MapCoalAgentLogic;
+import org.archstudio.archipelago2.ext.structures.logics.MapFunAgentLogic;
+import org.archstudio.archipelago2.ext.structures.logics.MapEncapsulatedUnitLogic;
+
+
 import org.archstudio.archipelago2.ext.structures.logics.MapConnectorLogic;
 import org.archstudio.archipelago2.ext.structures.logics.MapInterfaceLogic;
 import org.archstudio.archipelago2.ext.structures.logics.MapLinkLogic;
@@ -101,6 +107,29 @@ public class StructureUtils extends AbstractThingLogic {
         "Loading Component Interfaces"));
     logics.addThingLogic(new MapMappingsLogic(world, xarch, editRef,
         "component/subStructure/interfaceMapping", "Loading Component Interface Mappings"));
+    
+    
+    logics.addThingLogic(new MapCoalAgentLogic(world, xarch, editRef, "coalAgent", "Loading CoalAgents"));
+	logics.addThingLogic(
+			new MapInterfaceLogic(world, xarch, editRef, "coalAgent/interface", "Loading CoalAgent Interfaces"));
+	logics.addThingLogic(new MapMappingsLogic(world, xarch, editRef, "coalAgent/subStructure/interfaceMapping",
+			"Loading CoalAgent Interface Mappings"));
+
+	logics.addThingLogic(new MapFunAgentLogic(world, xarch, editRef, "funAgent", "Loading FunAgents"));
+	logics.addThingLogic(
+			new MapInterfaceLogic(world, xarch, editRef, "funAgent/interface", "Loading FunAgent Interfaces"));
+	logics.addThingLogic(new MapMappingsLogic(world, xarch, editRef, "funAgent/subStructure/interfaceMapping",
+			"Loading FunAgent Interface Mappings"));
+	
+	logics.addThingLogic(
+			new MapEncapsulatedUnitLogic(world, xarch, editRef, "encapsulatedUnit", "Loading EncapsulatedUnits"));
+	logics.addThingLogic(new MapInterfaceLogic(world, xarch, editRef, "encapsulatedUnit/interface",
+			"Loading EncapsulatedUnit Interfaces"));
+	logics.addThingLogic(new MapMappingsLogic(world, xarch, editRef,
+			"encapsulatedUnit/subStructure/interfaceMapping", "Loading EncapsulatedUnit Interface Mappings"));
+
+	
+	
     logics.addThingLogic(
         new MapConnectorLogic(world, xarch, editRef, "connector", "Loading Connectors"));
     logics.addThingLogic(new MapInterfaceLogic(world, xarch, editRef, "connector/interface",

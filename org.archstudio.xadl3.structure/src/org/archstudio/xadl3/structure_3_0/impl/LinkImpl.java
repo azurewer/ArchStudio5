@@ -19,24 +19,30 @@ import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '<em><b>Link</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Link</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.LinkImpl#getPoint1 <em>Point1</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.LinkImpl#getPoint2 <em>Point2</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.LinkImpl#getExt <em>Ext</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.LinkImpl#getId <em>Id</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.LinkImpl#getName <em>Name</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.LinkImpl#getPoint1
+ * <em>Point1</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.LinkImpl#getPoint2
+ * <em>Point2</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.LinkImpl#getExt
+ * <em>Ext</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.LinkImpl#getId
+ * <em>Id</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.LinkImpl#getName
+ * <em>Name</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	/**
-	 * The cached value of the '{@link #getPoint1() <em>Point1</em>}' reference. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * The cached value of the '{@link #getPoint1() <em>Point1</em>}' reference.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getPoint1()
 	 * @generated
@@ -45,8 +51,8 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	protected Interface point1;
 
 	/**
-	 * The cached value of the '{@link #getPoint2() <em>Point2</em>}' reference. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * The cached value of the '{@link #getPoint2() <em>Point2</em>}' reference.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getPoint2()
 	 * @generated
@@ -55,8 +61,8 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	protected Interface point2;
 
 	/**
-	 * The cached value of the '{@link #getExt() <em>Ext</em>}' containment reference list. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * The cached value of the '{@link #getExt() <em>Ext</em>}' containment
+	 * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getExt()
 	 * @generated
@@ -65,7 +71,8 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	protected EList<Extension> ext;
 
 	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getId()
 	 * @generated
@@ -74,7 +81,8 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	protected static final String ID_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getId()
 	 * @generated
@@ -83,8 +91,8 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	protected String id = ID_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getName()
 	 * @generated
@@ -93,8 +101,8 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getName()
 	 * @generated
@@ -140,10 +148,9 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	public void setPoint1(Interface newPoint1) {
 		Interface oldPoint1 = point1;
 		point1 = newPoint1;
-		if (eNotificationRequired()) {
+		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Structure_3_0Package.LINK__POINT1, oldPoint1,
 					point1));
-		}
 	}
 
 	/**
@@ -165,10 +172,9 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	public void setPoint2(Interface newPoint2) {
 		Interface oldPoint2 = point2;
 		point2 = newPoint2;
-		if (eNotificationRequired()) {
+		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Structure_3_0Package.LINK__POINT2, oldPoint2,
 					point2));
-		}
 	}
 
 	/**
@@ -203,9 +209,8 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
-		if (eNotificationRequired()) {
+		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Structure_3_0Package.LINK__ID, oldId, id));
-		}
 	}
 
 	/**
@@ -227,9 +232,8 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
-		if (eNotificationRequired()) {
+		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Structure_3_0Package.LINK__NAME, oldName, name));
-		}
 	}
 
 	/**
@@ -353,9 +357,8 @@ public class LinkImpl extends MinimalEObjectImpl.Container implements Link {
 	 */
 	@Override
 	public String toString() {
-		if (eIsProxy()) {
+		if (eIsProxy())
 			return super.toString();
-		}
 
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (id: ");

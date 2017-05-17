@@ -25,6 +25,12 @@ public class StructuresContentProvider extends AbstractArchipelago2ContentProvid
     if (XadlUtils.isInstanceOf(xarch, lastRef, Structure_3_0Package.Literals.STRUCTURE)) {
       List<Object> children = new ArrayList<>();
       children.addAll(xarch.getAll(lastRef, "Component"));
+      
+      children.addAll(xarch.getAll(lastRef, "CoalAgent"));
+      children.addAll(xarch.getAll(lastRef, "FunAgent"));
+      children.addAll(xarch.getAll(lastRef, "EncapsulatedUnit"));
+      
+      
       children.addAll(xarch.getAll(lastRef, "Connector"));
       children.addAll(xarch.getAll(lastRef, "Link"));
       return children.toArray();

@@ -3,13 +3,16 @@ package org.archstudio.myx.osgi.conn;
 import org.archstudio.myx.fw.IMyxName;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "OSGi Synch Proxy Connector" MyxGen extension in the org.archstudio.myx.osgi plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "OSGi Synch Proxy Connector" MyxGen 
+ * extension in the org.archstudio.myx.osgi plugin.
  */
 
 /**
  * Abstract Myx brick: OSGi Synch Proxy Connector
- *
+ * 
  * @generated
  */
 public abstract class OSGiSynchronousProxyConnectorStub extends org.archstudio.myx.java.conn.SynchronousProxyConnector
@@ -32,9 +35,8 @@ public abstract class OSGiSynchronousProxyConnectorStub extends org.archstudio.m
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		super.interfaceConnected(interfaceName, serviceObject);
 	}
@@ -46,9 +48,8 @@ public abstract class OSGiSynchronousProxyConnectorStub extends org.archstudio.m
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		super.interfaceDisconnecting(interfaceName, serviceObject);
 	}
 

@@ -5,13 +5,16 @@ import org.archstudio.myx.fw.MyxRegistry;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "Myx Runtime Impl" MyxGen extension in the org.archstudio.myx.java plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "Myx Runtime Impl" MyxGen 
+ * extension in the org.archstudio.myx.java plugin.
  */
 
 /**
  * Abstract Myx brick: Myx Runtime Impl
- *
+ * 
  * @generated
  */
 public abstract class MyxRuntimeComponentStub extends org.archstudio.myx.fw.AbstractMyxSimpleBrick
@@ -47,7 +50,7 @@ public abstract class MyxRuntimeComponentStub extends org.archstudio.myx.fw.Abst
 
 	/**
 	 * Myx name for the <code>myxRuntime</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_MYX_RUNTIME = MyxUtils.createName("myxRuntime");
@@ -97,9 +100,8 @@ public abstract class MyxRuntimeComponentStub extends org.archstudio.myx.fw.Abst
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		throw new IllegalArgumentException("Unhandled interface: " + interfaceName.getName());
 	}
@@ -111,9 +113,8 @@ public abstract class MyxRuntimeComponentStub extends org.archstudio.myx.fw.Abst
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		throw new IllegalArgumentException("Unhandled interface: " + interfaceName.getName());
 	}
 

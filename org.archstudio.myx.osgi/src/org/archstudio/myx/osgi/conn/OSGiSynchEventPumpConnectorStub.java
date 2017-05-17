@@ -4,13 +4,16 @@ import org.archstudio.myx.fw.IMyxName;
 import org.archstudio.myx.fw.MyxRegistry;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "OSGi Synch Event Pump Connector" MyxGen extension in the org.archstudio.myx.osgi plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "OSGi Synch Event Pump Connector" MyxGen 
+ * extension in the org.archstudio.myx.osgi plugin.
  */
 
 /**
  * Abstract Myx brick: OSGi Synch Event Pump Connector
- *
+ * 
  * @generated
  */
 public abstract class OSGiSynchEventPumpConnectorStub extends org.archstudio.myx.fw.AbstractMyxSimpleBrick
@@ -61,9 +64,8 @@ public abstract class OSGiSynchEventPumpConnectorStub extends org.archstudio.myx
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		throw new IllegalArgumentException("Unhandled interface: " + interfaceName.getName());
 	}
@@ -75,9 +77,8 @@ public abstract class OSGiSynchEventPumpConnectorStub extends org.archstudio.myx
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		throw new IllegalArgumentException("Unhandled interface: " + interfaceName.getName());
 	}
 

@@ -67,4 +67,11 @@ public interface IArchipelago2ContentProvider
    */
   @Override
   public void removeListener(ILabelProviderListener listener);
+
+  //******wjw201705
+  @Override
+  default void dispose() {
+	// TODO Auto-generated method stub
+	
+}
 }

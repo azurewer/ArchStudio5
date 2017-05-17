@@ -5,13 +5,16 @@ import org.archstudio.myx.fw.MyxRegistry;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "AIM Myx Component Impl" MyxGen extension in the org.archstudio.aim.core plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "AIM Myx Component Impl" MyxGen 
+ * extension in the org.archstudio.aim.core plugin.
  */
 
 /**
  * Abstract Myx brick: AIM Myx Component Impl
- *
+ * 
  * @generated
  */
 public abstract class AIMMyxComponentStub extends org.archstudio.myx.fw.AbstractMyxSimpleBrick
@@ -47,7 +50,7 @@ public abstract class AIMMyxComponentStub extends org.archstudio.myx.fw.Abstract
 
 	/**
 	 * Myx name for the <code>aim</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_AIM = MyxUtils.createName("aim");
@@ -75,7 +78,7 @@ public abstract class AIMMyxComponentStub extends org.archstudio.myx.fw.Abstract
 
 	/**
 	 * Myx name for the <code>myxRuntime</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_MYX_RUNTIME = MyxUtils.createName("myxRuntime");
@@ -103,7 +106,7 @@ public abstract class AIMMyxComponentStub extends org.archstudio.myx.fw.Abstract
 
 	/**
 	 * Myx name for the <code>xarch</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_XARCH = MyxUtils.createName("xarch");
@@ -155,22 +158,19 @@ public abstract class AIMMyxComponentStub extends org.archstudio.myx.fw.Abstract
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		if (interfaceName.equals(OUT_MYX_RUNTIME)) {
-			if (myxRuntime != null) {
+			if (myxRuntime != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: myxRuntime");
-			}
 			myxRuntime = (org.archstudio.myx.fw.IMyxRuntime) serviceObject;
 			return;
 		}
 
 		if (interfaceName.equals(OUT_XARCH)) {
-			if (xarch != null) {
+			if (xarch != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: xarch");
-			}
 			xarch = (org.archstudio.xarchadt.IXArchADT) serviceObject;
 			return;
 		}
@@ -187,20 +187,17 @@ public abstract class AIMMyxComponentStub extends org.archstudio.myx.fw.Abstract
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		if (interfaceName.equals(OUT_MYX_RUNTIME)) {
-			if (myxRuntime == null) {
+			if (myxRuntime == null)
 				throw new IllegalStateException("A connection was never made on interface: myxRuntime");
-			}
 			myxRuntime = null;
 			return;
 		}
 		if (interfaceName.equals(OUT_XARCH)) {
-			if (xarch == null) {
+			if (xarch == null)
 				throw new IllegalStateException("A connection was never made on interface: xarch");
-			}
 			xarch = null;
 			return;
 		}

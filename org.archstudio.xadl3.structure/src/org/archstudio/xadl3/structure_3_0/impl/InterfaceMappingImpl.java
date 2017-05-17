@@ -19,8 +19,8 @@ import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '<em><b>Interface Mapping</b></em>'. <!-- end-user-doc
- * -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Interface Mapping</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
@@ -29,17 +29,21 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <em>Outer Interface Link</em>}</li>
  * <li>{@link org.archstudio.xadl3.structure_3_0.impl.InterfaceMappingImpl#getInnerInterfaceLink
  * <em>Inner Interface Link</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.InterfaceMappingImpl#getExt <em>Ext</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.InterfaceMappingImpl#getId <em>Id</em>}</li>
- * <li>{@link org.archstudio.xadl3.structure_3_0.impl.InterfaceMappingImpl#getName <em>Name</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.InterfaceMappingImpl#getExt
+ * <em>Ext</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.InterfaceMappingImpl#getId
+ * <em>Id</em>}</li>
+ * <li>{@link org.archstudio.xadl3.structure_3_0.impl.InterfaceMappingImpl#getName
+ * <em>Name</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class InterfaceMappingImpl extends MinimalEObjectImpl.Container implements InterfaceMapping {
 	/**
-	 * The cached value of the '{@link #getOuterInterfaceLink() <em>Outer Interface Link</em>}' reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
+	 * The cached value of the '{@link #getOuterInterfaceLink() <em>Outer
+	 * Interface Link</em>}' reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * 
 	 * @see #getOuterInterfaceLink()
 	 * @generated
@@ -48,8 +52,9 @@ public class InterfaceMappingImpl extends MinimalEObjectImpl.Container implement
 	protected Interface outerInterfaceLink;
 
 	/**
-	 * The cached value of the '{@link #getInnerInterfaceLink() <em>Inner Interface Link</em>}' reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
+	 * The cached value of the '{@link #getInnerInterfaceLink() <em>Inner
+	 * Interface Link</em>}' reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * 
 	 * @see #getInnerInterfaceLink()
 	 * @generated
@@ -58,8 +63,8 @@ public class InterfaceMappingImpl extends MinimalEObjectImpl.Container implement
 	protected Interface innerInterfaceLink;
 
 	/**
-	 * The cached value of the '{@link #getExt() <em>Ext</em>}' containment reference list. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * The cached value of the '{@link #getExt() <em>Ext</em>}' containment
+	 * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getExt()
 	 * @generated
@@ -68,7 +73,8 @@ public class InterfaceMappingImpl extends MinimalEObjectImpl.Container implement
 	protected EList<Extension> ext;
 
 	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getId()
 	 * @generated
@@ -77,7 +83,8 @@ public class InterfaceMappingImpl extends MinimalEObjectImpl.Container implement
 	protected static final String ID_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getId()
 	 * @generated
@@ -86,8 +93,8 @@ public class InterfaceMappingImpl extends MinimalEObjectImpl.Container implement
 	protected String id = ID_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getName()
 	 * @generated
@@ -96,8 +103,8 @@ public class InterfaceMappingImpl extends MinimalEObjectImpl.Container implement
 	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #getName()
 	 * @generated
@@ -143,11 +150,10 @@ public class InterfaceMappingImpl extends MinimalEObjectImpl.Container implement
 	public void setOuterInterfaceLink(Interface newOuterInterfaceLink) {
 		Interface oldOuterInterfaceLink = outerInterfaceLink;
 		outerInterfaceLink = newOuterInterfaceLink;
-		if (eNotificationRequired()) {
+		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
 					Structure_3_0Package.INTERFACE_MAPPING__OUTER_INTERFACE_LINK, oldOuterInterfaceLink,
 					outerInterfaceLink));
-		}
 	}
 
 	/**
@@ -169,11 +175,10 @@ public class InterfaceMappingImpl extends MinimalEObjectImpl.Container implement
 	public void setInnerInterfaceLink(Interface newInnerInterfaceLink) {
 		Interface oldInnerInterfaceLink = innerInterfaceLink;
 		innerInterfaceLink = newInnerInterfaceLink;
-		if (eNotificationRequired()) {
+		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
 					Structure_3_0Package.INTERFACE_MAPPING__INNER_INTERFACE_LINK, oldInnerInterfaceLink,
 					innerInterfaceLink));
-		}
 	}
 
 	/**
@@ -209,10 +214,9 @@ public class InterfaceMappingImpl extends MinimalEObjectImpl.Container implement
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
-		if (eNotificationRequired()) {
+		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Structure_3_0Package.INTERFACE_MAPPING__ID, oldId,
 					id));
-		}
 	}
 
 	/**
@@ -234,10 +238,9 @@ public class InterfaceMappingImpl extends MinimalEObjectImpl.Container implement
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
-		if (eNotificationRequired()) {
+		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Structure_3_0Package.INTERFACE_MAPPING__NAME, oldName,
 					name));
-		}
 	}
 
 	/**
@@ -361,9 +364,8 @@ public class InterfaceMappingImpl extends MinimalEObjectImpl.Container implement
 	 */
 	@Override
 	public String toString() {
-		if (eIsProxy()) {
+		if (eIsProxy())
 			return super.toString();
-		}
 
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (id: ");

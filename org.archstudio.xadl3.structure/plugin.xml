@@ -34,6 +34,27 @@ compatible_directions(&apos;none&apos;, &apos;none&apos;).
          </Type>
       </Icon>
       <Icon
+            name="coalAgent"
+            icon16="res/coalAgent-16.png">
+         <Type
+               class="org.archstudio.xadl3.structure_3_0.CoalAgent">
+         </Type>
+      </Icon>
+      <Icon
+            name="funAgent"
+            icon16="res/funAgent-16.png">
+         <Type
+               class="org.archstudio.xadl3.structure_3_0.FunAgent">
+         </Type>
+      </Icon>
+      <Icon
+            name="encapsulatedUnit"
+            icon16="res/encapsulatedUnit-16.png">
+         <Type
+               class="org.archstudio.xadl3.structure_3_0.EncapsulatedUnit">
+         </Type>
+      </Icon>
+      <Icon
             name="connector"
             icon16="res/connector-16.png">
          <Type

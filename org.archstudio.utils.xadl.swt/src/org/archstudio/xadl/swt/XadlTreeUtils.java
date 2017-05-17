@@ -15,9 +15,13 @@ import org.eclipse.swt.graphics.Image;
 public class XadlTreeUtils {
 
 	public enum Type {
-		UNKNOWN("unknown"), DOCUMENTROOT("document root element"), XADLELEMENT("xADL element"), STRUCTURE("structure"), COMPONENT(
-				"component"), COMPONENT_INTERFACE("component interface"), CONNECTOR("connector"), CONNECTOR_INTERFACE(
-				"connector interface");
+		UNKNOWN("unknown"), DOCUMENTROOT("document root element"), XADLELEMENT("xADL element"), STRUCTURE(
+				"structure"), COMPONENT("component"), COMPONENT_INTERFACE("component interface"), CONNECTOR(
+						"connector"), CONNECTOR_INTERFACE("connector interface"), COALAGENT(
+								"coalAgent"), COALAGENT_INTERFACE("coalAgent interface"), FUNAGENT(
+										"funAgent"), FUNAGENT_INTERFACE("funAgent interface"), ENCAPSULATEDUNIT(
+												"encapsulatedUnit"), ENCAPSULATEDUNIT_INTERFACE(
+														"encapsulatedUnit interface"),;
 
 		private String description;
 
@@ -38,6 +42,16 @@ public class XadlTreeUtils {
 		pathToTypeMap.put("xADL/structure", Type.STRUCTURE);
 		pathToTypeMap.put("xADL/structure/component", Type.COMPONENT);
 		pathToTypeMap.put("xADL/structure/component/interface", Type.COMPONENT_INTERFACE);
+
+		// ***************wjw201705***************//
+		pathToTypeMap.put("xADL/structure/coalAgent", Type.COALAGENT);
+		pathToTypeMap.put("xADL/structure/coalAgent/interface", Type.COALAGENT_INTERFACE);
+		pathToTypeMap.put("xADL/structure/funAgent", Type.FUNAGENT);
+		pathToTypeMap.put("xADL/structure/funAgent/interface", Type.FUNAGENT_INTERFACE);
+		pathToTypeMap.put("xADL/structure/encapsulatedUnit", Type.ENCAPSULATEDUNIT);
+		pathToTypeMap.put("xADL/structure/encapsulatedUnit/interface", Type.ENCAPSULATEDUNIT_INTERFACE);
+		// ***************wjw201705***************//
+
 		pathToTypeMap.put("xADL/structure/connector", Type.CONNECTOR);
 		pathToTypeMap.put("xADL/structure/connector/interface", Type.CONNECTOR_INTERFACE);
 	}
@@ -61,10 +75,26 @@ public class XadlTreeUtils {
 			return resources.getImage(ArchStudioCommonResources.ICON_STRUCTURE);
 		case COMPONENT:
 			return resources.getImage(ArchStudioCommonResources.ICON_COMPONENT);
+
+		// ***************wjw201705***************//
+		case COALAGENT:
+			return resources.getImage(ArchStudioCommonResources.ICON_COALAGENT);
+
+		case FUNAGENT:
+			return resources.getImage(ArchStudioCommonResources.ICON_FUNAGENT);
+		case ENCAPSULATEDUNIT:
+			return resources.getImage(ArchStudioCommonResources.ICON_ENCAPSULATEDUNIT);
+		// ***************wjw201705***************//
+
 		case CONNECTOR:
 			return resources.getImage(ArchStudioCommonResources.ICON_CONNECTOR);
 		case COMPONENT_INTERFACE:
 		case CONNECTOR_INTERFACE:
+			// ***************wjw201705***************//
+		case COALAGENT_INTERFACE:
+		case FUNAGENT_INTERFACE:
+		case ENCAPSULATEDUNIT_INTERFACE:
+			// ***************wjw201705***************//
 			return resources.getImage(ArchStudioCommonResources.ICON_INTERFACE);
 		default:
 			return null;

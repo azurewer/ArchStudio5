@@ -3,13 +3,16 @@ package org.archstudio.archedit.core;
 import org.archstudio.myx.fw.IMyxName;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "ArchEdit Component Impl" MyxGen extension in the org.archstudio.archedit.core plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "ArchEdit Component Impl" MyxGen 
+ * extension in the org.archstudio.archedit.core plugin.
  */
 
 /**
  * Abstract Myx brick: ArchEdit Component Impl
- *
+ * 
  * @generated
  */
 public abstract class ArchEditMyxComponentStub
@@ -42,9 +45,8 @@ public abstract class ArchEditMyxComponentStub
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		super.interfaceConnected(interfaceName, serviceObject);
 	}
@@ -56,9 +58,8 @@ public abstract class ArchEditMyxComponentStub
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		super.interfaceDisconnecting(interfaceName, serviceObject);
 	}
 

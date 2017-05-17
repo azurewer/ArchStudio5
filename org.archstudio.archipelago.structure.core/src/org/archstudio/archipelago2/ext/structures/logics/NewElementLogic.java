@@ -35,6 +35,14 @@ public class NewElementLogic extends AbstractThingLogic implements IBNAMenuListe
     BNAUtils2.setNewThingSpot(view.getBNAWorld(), worldPoint.x, worldPoint.y);
     if (thingsAtLocation.getViewAtLocation() != null) {
       MenuContributor.addNewComponentAction(menuManager, xarch, editRef, null, null);
+      
+    //*********************201705wjw modified*********************
+      //MenuContributor.addNewComponentAction(menuManager, xarch, editRef, null, null);
+      MenuContributor.addNewCoalAgentAction(menuManager, xarch, editRef, null, null);      
+      MenuContributor.addNewFunAgentAction(menuManager, xarch, editRef, null, null);
+      MenuContributor.addNewEncapsulatedUnitAction(menuManager, xarch, editRef, null, null);
+      //*********************201705wjw modified*********************
+      
       MenuContributor.addNewConnectorAction(menuManager, xarch, editRef, null, null);
       MenuContributor.addNewLinkAction(menuManager, xarch, editRef, null, null);
     } else {

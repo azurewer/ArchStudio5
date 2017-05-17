@@ -5,13 +5,16 @@ import org.archstudio.myx.fw.MyxRegistry;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "Myx Impl" MyxGen extension in the org.archstudio.archlight.core plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "Myx Impl" MyxGen 
+ * extension in the org.archstudio.archlight.core plugin.
  */
 
 /**
  * Abstract Myx brick: Myx Impl
- *
+ * 
  * @generated
  */
 public abstract class ArchlightToolAggregatorMyxComponentStub extends org.archstudio.myx.fw.AbstractMyxSimpleBrick
@@ -48,7 +51,7 @@ public abstract class ArchlightToolAggregatorMyxComponentStub extends org.archst
 
 	/**
 	 * Myx name for the <code>results</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_RESULTS = MyxUtils.createName("results");
@@ -76,7 +79,7 @@ public abstract class ArchlightToolAggregatorMyxComponentStub extends org.archst
 
 	/**
 	 * Myx name for the <code>tools</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_TOOLS = MyxUtils.createName("tools");
@@ -104,7 +107,7 @@ public abstract class ArchlightToolAggregatorMyxComponentStub extends org.archst
 
 	/**
 	 * Myx name for the <code>tool</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_TOOL = MyxUtils.createName("tool");
@@ -121,7 +124,7 @@ public abstract class ArchlightToolAggregatorMyxComponentStub extends org.archst
 
 	/**
 	 * Myx name for the <code>progress</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_PROGRESS = MyxUtils.createName("progress");
@@ -163,22 +166,19 @@ public abstract class ArchlightToolAggregatorMyxComponentStub extends org.archst
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		if (interfaceName.equals(OUT_RESULTS)) {
-			if (results != null) {
+			if (results != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: results");
-			}
 			results = (org.archstudio.myx.java.conn.IMultiwayResults) serviceObject;
 			return;
 		}
 
 		if (interfaceName.equals(OUT_TOOLS)) {
-			if (tools != null) {
+			if (tools != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: tools");
-			}
 			tools = (org.archstudio.archlight.IArchlightTool) serviceObject;
 			return;
 		}
@@ -195,20 +195,17 @@ public abstract class ArchlightToolAggregatorMyxComponentStub extends org.archst
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		if (interfaceName.equals(OUT_RESULTS)) {
-			if (results == null) {
+			if (results == null)
 				throw new IllegalStateException("A connection was never made on interface: results");
-			}
 			results = null;
 			return;
 		}
 		if (interfaceName.equals(OUT_TOOLS)) {
-			if (tools == null) {
+			if (tools == null)
 				throw new IllegalStateException("A connection was never made on interface: tools");
-			}
 			tools = null;
 			return;
 		}

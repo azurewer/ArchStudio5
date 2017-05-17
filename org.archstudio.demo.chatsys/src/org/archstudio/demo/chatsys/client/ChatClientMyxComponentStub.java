@@ -5,13 +5,16 @@ import org.archstudio.myx.fw.MyxRegistry;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "Client Impl" MyxGen extension in the org.archstudio.demo.chatsys plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "Client Impl" MyxGen 
+ * extension in the org.archstudio.demo.chatsys plugin.
  */
 
 /**
  * Abstract Myx brick: Client Impl
- *
+ * 
  * @generated
  */
 public abstract class ChatClientMyxComponentStub extends org.archstudio.myx.fw.AbstractMyxSimpleBrick
@@ -47,7 +50,7 @@ public abstract class ChatClientMyxComponentStub extends org.archstudio.myx.fw.A
 
 	/**
 	 * Myx name for the <code>chat</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_CHAT = MyxUtils.createName("chat");
@@ -75,7 +78,7 @@ public abstract class ChatClientMyxComponentStub extends org.archstudio.myx.fw.A
 
 	/**
 	 * Myx name for the <code>chatEvents</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_CHAT_EVENTS = MyxUtils.createName("chatEvents");
@@ -112,14 +115,12 @@ public abstract class ChatClientMyxComponentStub extends org.archstudio.myx.fw.A
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		if (interfaceName.equals(OUT_CHAT)) {
-			if (chat != null) {
+			if (chat != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: chat");
-			}
 			chat = (org.archstudio.demo.chatsys.IChat) serviceObject;
 			return;
 		}
@@ -135,13 +136,11 @@ public abstract class ChatClientMyxComponentStub extends org.archstudio.myx.fw.A
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		if (interfaceName.equals(OUT_CHAT)) {
-			if (chat == null) {
+			if (chat == null)
 				throw new IllegalStateException("A connection was never made on interface: chat");
-			}
 			chat = null;
 			return;
 		}

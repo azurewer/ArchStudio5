@@ -100,6 +100,15 @@ public class GraphLayoutDialog extends Dialog {
 		GraphLayoutParameters defaultParams = new GraphLayoutParameters();
 		defaultParams.setRelativeComponentWidth(1.0);
 		defaultParams.setRelativeComponentHeight(1.0);
+		
+		defaultParams.setRelativeCoalAgentWidth(1.0);
+		defaultParams.setRelativeCoalAgentHeight(1.0);
+		defaultParams.setRelativeFunAgentWidth(1.0);
+		defaultParams.setRelativeFunAgentHeight(1.0);
+		defaultParams.setRelativeEncapsulatedUnitWidth(1.0);
+		defaultParams.setRelativeEncapsulatedUnitHeight(1.0);
+		
+		
 		defaultParams.setRelativeConnectorWidth(1.0);
 		defaultParams.setRelativeConnectorHeight(1.0);
 		defaultParams.setScale(100.0);
@@ -111,6 +120,15 @@ public class GraphLayoutDialog extends Dialog {
 		GraphLayoutParameters niceParams = new GraphLayoutParameters();
 		niceParams.setRelativeComponentWidth(5.0);
 		niceParams.setRelativeComponentHeight(4.0);
+		
+		niceParams.setRelativeCoalAgentWidth(7.0);
+		niceParams.setRelativeCoalAgentHeight(6.0);
+		niceParams.setRelativeFunAgentWidth(8.0);
+		niceParams.setRelativeFunAgentHeight(9.0);
+		niceParams.setRelativeEncapsulatedUnitWidth(10.0);
+		niceParams.setRelativeEncapsulatedUnitHeight(11.0);
+		
+		
 		niceParams.setRelativeConnectorWidth(3.0);
 		niceParams.setRelativeConnectorHeight(2.0);
 		niceParams.setScale(25.0);
@@ -124,6 +142,15 @@ public class GraphLayoutDialog extends Dialog {
 		GraphLayoutParameters c2Params = new GraphLayoutParameters();
 		c2Params.setRelativeComponentWidth(5.0);
 		c2Params.setRelativeComponentHeight(4.0);
+		
+		c2Params.setRelativeCoalAgentWidth(11.0);
+		c2Params.setRelativeCoalAgentHeight(12.0);
+		c2Params.setRelativeFunAgentWidth(13.0);
+		c2Params.setRelativeFunAgentHeight(14.0);
+		c2Params.setRelativeEncapsulatedUnitWidth(15.0);
+		c2Params.setRelativeEncapsulatedUnitHeight(16.0);
+		
+		
 		c2Params.setRelativeConnectorWidth(10.0);
 		c2Params.setRelativeConnectorHeight(1.0);
 		c2Params.setScale(25.0);

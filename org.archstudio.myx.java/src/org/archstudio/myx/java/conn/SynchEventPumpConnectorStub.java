@@ -4,13 +4,16 @@ import org.archstudio.myx.fw.IMyxName;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "Synch Event Pump Impl" MyxGen extension in the org.archstudio.myx.java plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "Synch Event Pump Impl" MyxGen 
+ * extension in the org.archstudio.myx.java plugin.
  */
 
 /**
  * Abstract Myx brick: Synch Event Pump Impl
- *
+ * 
  * @generated
  */
 public abstract class SynchEventPumpConnectorStub extends org.archstudio.myx.java.conn.EventPumpConnector
@@ -18,7 +21,7 @@ public abstract class SynchEventPumpConnectorStub extends org.archstudio.myx.jav
 
 	/**
 	 * Myx name for the <code>synch</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_SYNCH = MyxUtils.createName("synch");
@@ -29,8 +32,7 @@ public abstract class SynchEventPumpConnectorStub extends org.archstudio.myx.jav
 	 * @see #OUT_SYNCH
 	 * @generated
 	 */
-	protected final java.util.Collection<java.lang.Object> synch =
-			new java.util.concurrent.CopyOnWriteArrayList<java.lang.Object>();
+	protected final java.util.Collection<java.lang.Object> synch = new java.util.concurrent.CopyOnWriteArrayList<java.lang.Object>();
 
 	/**
 	 * Returns the service object(s) for the synch interface.
@@ -60,9 +62,8 @@ public abstract class SynchEventPumpConnectorStub extends org.archstudio.myx.jav
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		if (interfaceName.equals(OUT_SYNCH)) {
 			synch.add((java.lang.Object) serviceObject);
@@ -80,9 +81,8 @@ public abstract class SynchEventPumpConnectorStub extends org.archstudio.myx.jav
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		if (interfaceName.equals(OUT_SYNCH)) {
 			synch.remove(serviceObject);
 			return;

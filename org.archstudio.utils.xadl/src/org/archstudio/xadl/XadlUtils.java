@@ -94,6 +94,19 @@ public class XadlUtils {
     return isInstanceOf(xarch, ref, Structure_3_0Package.Literals.COMPONENT);
   }
 
+//***************wjw201705***************//
+  public static boolean isCoalAgent(IXArchADTQuery xarch, ObjRef ref) {
+	    return isInstanceOf(xarch, ref, Structure_3_0Package.Literals.COALAGENT);
+	  }
+  public static boolean isFunAgent(IXArchADTQuery xarch, ObjRef ref) {
+	    return isInstanceOf(xarch, ref, Structure_3_0Package.Literals.FUNAGENT);
+	  }
+  public static boolean isEncapsulatedUnit(IXArchADTQuery xarch, ObjRef ref) {
+	    return isInstanceOf(xarch, ref, Structure_3_0Package.Literals.ENCAPSULATEDUNIT);
+	  }
+//***************wjw201705***************//
+  
+  
   public static boolean isConnector(IXArchADTQuery xarch, ObjRef ref) {
     return isInstanceOf(xarch, ref, Structure_3_0Package.Literals.CONNECTOR);
   }

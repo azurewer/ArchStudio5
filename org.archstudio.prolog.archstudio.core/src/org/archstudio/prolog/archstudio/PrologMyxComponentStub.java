@@ -5,13 +5,16 @@ import org.archstudio.myx.fw.MyxRegistry;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "Prolog Impl" MyxGen extension in the org.archstudio.prolog.archstudio.core plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "Prolog Impl" MyxGen 
+ * extension in the org.archstudio.prolog.archstudio.core plugin.
  */
 
 /**
  * Abstract Myx brick: Prolog Impl
- *
+ * 
  * @generated
  */
 public abstract class PrologMyxComponentStub extends org.archstudio.myx.fw.AbstractMyxSimpleBrick
@@ -47,7 +50,7 @@ public abstract class PrologMyxComponentStub extends org.archstudio.myx.fw.Abstr
 
 	/**
 	 * Myx name for the <code>xarch</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_XARCH = MyxUtils.createName("xarch");
@@ -75,7 +78,7 @@ public abstract class PrologMyxComponentStub extends org.archstudio.myx.fw.Abstr
 
 	/**
 	 * Myx name for the <code>tests</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_TESTS = MyxUtils.createName("tests");
@@ -103,7 +106,7 @@ public abstract class PrologMyxComponentStub extends org.archstudio.myx.fw.Abstr
 
 	/**
 	 * Myx name for the <code>tools</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_TOOLS = MyxUtils.createName("tools");
@@ -141,22 +144,19 @@ public abstract class PrologMyxComponentStub extends org.archstudio.myx.fw.Abstr
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		if (interfaceName.equals(OUT_XARCH)) {
-			if (xarch != null) {
+			if (xarch != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: xarch");
-			}
 			xarch = (org.archstudio.xarchadt.IXArchADT) serviceObject;
 			return;
 		}
 
 		if (interfaceName.equals(OUT_TESTS)) {
-			if (tests != null) {
+			if (tests != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: tests");
-			}
 			tests = (org.archstudio.testadt.IArchlightTestADT) serviceObject;
 			return;
 		}
@@ -173,20 +173,17 @@ public abstract class PrologMyxComponentStub extends org.archstudio.myx.fw.Abstr
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		if (interfaceName.equals(OUT_XARCH)) {
-			if (xarch == null) {
+			if (xarch == null)
 				throw new IllegalStateException("A connection was never made on interface: xarch");
-			}
 			xarch = null;
 			return;
 		}
 		if (interfaceName.equals(OUT_TESTS)) {
-			if (tests == null) {
+			if (tests == null)
 				throw new IllegalStateException("A connection was never made on interface: tests");
-			}
 			tests = null;
 			return;
 		}

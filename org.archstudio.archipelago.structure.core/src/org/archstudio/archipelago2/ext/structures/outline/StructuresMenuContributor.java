@@ -24,6 +24,15 @@ public class StructuresMenuContributor extends AbstractArchipelago2MenuContribut
     }
     if (XadlUtils.isInstanceOf(xarch, editRef, Structure_3_0Package.Literals.STRUCTURE)) {
       MenuContributor.addNewComponentAction(menuManager, xarch, editRef, outline, element);
+      
+      //*********************201705wjw modified*********************
+      //MenuContributor.addNewComponentAction(menuManager, xarch, editRef, outline, element);
+      MenuContributor.addNewCoalAgentAction(menuManager, xarch, editRef, null, null);      
+      MenuContributor.addNewFunAgentAction(menuManager, xarch, editRef, null, null);
+      MenuContributor.addNewEncapsulatedUnitAction(menuManager, xarch, editRef, null, null);
+      //*********************201705wjw modified*********************
+      
+      
       MenuContributor.addNewConnectorAction(menuManager, xarch, editRef, outline, element);
       MenuContributor.addNewLinkAction(menuManager, xarch, editRef, outline, element);
     }

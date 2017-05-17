@@ -5,13 +5,16 @@ import org.archstudio.myx.fw.MyxRegistry;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "File Manager Impl" MyxGen extension in the org.archstudio.filemanager.core plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "File Manager Impl" MyxGen 
+ * extension in the org.archstudio.filemanager.core plugin.
  */
 
 /**
  * Abstract Myx brick: File Manager Impl
- *
+ * 
  * @generated
  */
 public abstract class FileManagerMyxComponentStub extends org.archstudio.myx.fw.AbstractMyxSimpleBrick
@@ -48,7 +51,7 @@ public abstract class FileManagerMyxComponentStub extends org.archstudio.myx.fw.
 
 	/**
 	 * Myx name for the <code>xarch</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_XARCH = MyxUtils.createName("xarch");
@@ -76,7 +79,7 @@ public abstract class FileManagerMyxComponentStub extends org.archstudio.myx.fw.
 
 	/**
 	 * Myx name for the <code>modelEvents</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_MODEL_EVENTS = MyxUtils.createName("modelEvents");
@@ -93,7 +96,7 @@ public abstract class FileManagerMyxComponentStub extends org.archstudio.myx.fw.
 
 	/**
 	 * Myx name for the <code>fileEvents</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_FILE_EVENTS = MyxUtils.createName("fileEvents");
@@ -110,7 +113,7 @@ public abstract class FileManagerMyxComponentStub extends org.archstudio.myx.fw.
 
 	/**
 	 * Myx name for the <code>fileManager</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_FILE_MANAGER = MyxUtils.createName("fileManager");
@@ -127,7 +130,7 @@ public abstract class FileManagerMyxComponentStub extends org.archstudio.myx.fw.
 
 	/**
 	 * Myx name for the <code>fileManagerEvents</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_FILE_MANAGER_EVENTS = MyxUtils.createName("fileManagerEvents");
@@ -138,19 +141,18 @@ public abstract class FileManagerMyxComponentStub extends org.archstudio.myx.fw.
 	 * @see #OUT_FILE_MANAGER_EVENTS
 	 * @generated
 	 */
-	protected final java.util.Collection<org.archstudio.filemanager.IFileManagerListener> fileManagerEvents =
-			new java.util.concurrent.CopyOnWriteArrayList<org.archstudio.filemanager.IFileManagerListener>();
+	protected final java.util.Collection<org.archstudio.filemanager.IFileManagerListener> fileManagerEvents = new java.util.concurrent.CopyOnWriteArrayList<org.archstudio.filemanager.IFileManagerListener>();
 
 	/**
-	 * Service object proxy for the fileManagerEvents interface. Calls to this proxy object are automatically delegated
-	 * to all connections on the interface
+	 * Service object proxy for the fileManagerEvents interface. Calls to this
+	 * proxy object are automatically delegated to all connections on the
+	 * interface
 	 * 
 	 * @see #OUT_FILE_MANAGER_EVENTS
 	 * @generated
 	 */
-	protected final org.archstudio.filemanager.IFileManagerListener fileManagerEventsProxy =
-			(org.archstudio.filemanager.IFileManagerListener) java.lang.reflect.Proxy.newProxyInstance(
-					org.archstudio.filemanager.IFileManagerListener.class.getClassLoader(),
+	protected final org.archstudio.filemanager.IFileManagerListener fileManagerEventsProxy = (org.archstudio.filemanager.IFileManagerListener) java.lang.reflect.Proxy
+			.newProxyInstance(org.archstudio.filemanager.IFileManagerListener.class.getClassLoader(),
 					new Class[] { org.archstudio.filemanager.IFileManagerListener.class },
 					new java.lang.reflect.InvocationHandler() {
 						@Override
@@ -159,8 +161,7 @@ public abstract class FileManagerMyxComponentStub extends org.archstudio.myx.fw.
 							for (org.archstudio.filemanager.IFileManagerListener o : fileManagerEvents) {
 								try {
 									method.invoke(o, args);
-								}
-								catch (Exception e) {
+								} catch (Exception e) {
 									e.printStackTrace();
 								}
 							}
@@ -209,14 +210,12 @@ public abstract class FileManagerMyxComponentStub extends org.archstudio.myx.fw.
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		if (interfaceName.equals(OUT_XARCH)) {
-			if (xarch != null) {
+			if (xarch != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: xarch");
-			}
 			xarch = (org.archstudio.xarchadt.IXArchADT) serviceObject;
 			return;
 		}
@@ -238,13 +237,11 @@ public abstract class FileManagerMyxComponentStub extends org.archstudio.myx.fw.
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		if (interfaceName.equals(OUT_XARCH)) {
-			if (xarch == null) {
+			if (xarch == null)
 				throw new IllegalStateException("A connection was never made on interface: xarch");
-			}
 			xarch = null;
 			return;
 		}

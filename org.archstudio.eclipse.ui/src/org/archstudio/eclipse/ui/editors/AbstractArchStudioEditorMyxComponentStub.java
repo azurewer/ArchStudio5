@@ -5,13 +5,16 @@ import org.archstudio.myx.fw.MyxRegistry;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "Abstract ArchStudio Editor Component Impl" MyxGen extension in the org.archstudio.eclipse.ui plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "Abstract ArchStudio Editor Component Impl" MyxGen 
+ * extension in the org.archstudio.eclipse.ui plugin.
  */
 
 /**
  * Abstract Myx brick: Abstract ArchStudio Editor Component Impl
- *
+ * 
  * @generated
  */
 public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archstudio.myx.fw.AbstractMyxSimpleBrick
@@ -28,6 +31,7 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 	 * 
 	 * @generated
 	 */
+
 	@Override
 	public void begin() {
 		super.begin();
@@ -39,6 +43,7 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 	 * 
 	 * @generated
 	 */
+
 	@Override
 	public void end() {
 		myxRegistry.unregisterBrick(this);
@@ -47,7 +52,7 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 
 	/**
 	 * Myx name for the <code>resources</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_RESOURCES = MyxUtils.createName("resources");
@@ -75,7 +80,7 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 
 	/**
 	 * Myx name for the <code>editorManager</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_EDITOR_MANAGER = MyxUtils.createName("editorManager");
@@ -103,21 +108,21 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 
 	/**
 	 * Myx name for the <code>focusEditorEvents</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_FOCUS_EDITOR_EVENTS = MyxUtils.createName("focusEditorEvents");
 
 	/**
-	 * Service object proxy for the focusEditorEvents interface. Calls to this proxy object are automatically delegated
-	 * to all service objects in the MyxRegistry of type org.archstudio.eclipse.ui.IFocusEditorListener.
+	 * Service object proxy for the focusEditorEvents interface. Calls to this
+	 * proxy object are automatically delegated to all service objects in the
+	 * MyxRegistry of type org.archstudio.eclipse.ui.IFocusEditorListener.
 	 * 
 	 * @see #IN_FOCUS_EDITOR_EVENTS
 	 * @generated
 	 */
-	protected final org.archstudio.eclipse.ui.IFocusEditorListener focusEditorEventsProxy =
-			(org.archstudio.eclipse.ui.IFocusEditorListener) java.lang.reflect.Proxy.newProxyInstance(
-					org.archstudio.eclipse.ui.IFocusEditorListener.class.getClassLoader(),
+	protected final org.archstudio.eclipse.ui.IFocusEditorListener focusEditorEventsProxy = (org.archstudio.eclipse.ui.IFocusEditorListener) java.lang.reflect.Proxy
+			.newProxyInstance(org.archstudio.eclipse.ui.IFocusEditorListener.class.getClassLoader(),
 					new Class[] { org.archstudio.eclipse.ui.IFocusEditorListener.class },
 					new java.lang.reflect.InvocationHandler() {
 						@Override
@@ -128,8 +133,7 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 									org.archstudio.eclipse.ui.IFocusEditorListener.class)) {
 								try {
 									method.invoke(o, args);
-								}
-								catch (Exception e) {
+								} catch (Exception e) {
 									e.printStackTrace();
 								}
 							}
@@ -149,7 +153,7 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 
 	/**
 	 * Myx name for the <code>fileManager</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_FILE_MANAGER = MyxUtils.createName("fileManager");
@@ -177,21 +181,21 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 
 	/**
 	 * Myx name for the <code>fileManagerEvents</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_FILE_MANAGER_EVENTS = MyxUtils.createName("fileManagerEvents");
 
 	/**
-	 * Service object proxy for the fileManagerEvents interface. Calls to this proxy object are automatically delegated
-	 * to all service objects in the MyxRegistry of type org.archstudio.filemanager.IFileManagerListener.
+	 * Service object proxy for the fileManagerEvents interface. Calls to this
+	 * proxy object are automatically delegated to all service objects in the
+	 * MyxRegistry of type org.archstudio.filemanager.IFileManagerListener.
 	 * 
 	 * @see #IN_FILE_MANAGER_EVENTS
 	 * @generated
 	 */
-	protected final org.archstudio.filemanager.IFileManagerListener fileManagerEventsProxy =
-			(org.archstudio.filemanager.IFileManagerListener) java.lang.reflect.Proxy.newProxyInstance(
-					org.archstudio.filemanager.IFileManagerListener.class.getClassLoader(),
+	protected final org.archstudio.filemanager.IFileManagerListener fileManagerEventsProxy = (org.archstudio.filemanager.IFileManagerListener) java.lang.reflect.Proxy
+			.newProxyInstance(org.archstudio.filemanager.IFileManagerListener.class.getClassLoader(),
 					new Class[] { org.archstudio.filemanager.IFileManagerListener.class },
 					new java.lang.reflect.InvocationHandler() {
 						@Override
@@ -202,8 +206,7 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 									org.archstudio.filemanager.IFileManagerListener.class)) {
 								try {
 									method.invoke(o, args);
-								}
-								catch (Exception e) {
+								} catch (Exception e) {
 									e.printStackTrace();
 								}
 							}
@@ -223,7 +226,7 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 
 	/**
 	 * Myx name for the <code>xarch</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_XARCH = MyxUtils.createName("xarch");
@@ -251,21 +254,21 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 
 	/**
 	 * Myx name for the <code>fileEvents</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_FILE_EVENTS = MyxUtils.createName("fileEvents");
 
 	/**
-	 * Service object proxy for the fileEvents interface. Calls to this proxy object are automatically delegated to all
-	 * service objects in the MyxRegistry of type org.archstudio.xarchadt.IXArchADTFileListener.
+	 * Service object proxy for the fileEvents interface. Calls to this proxy
+	 * object are automatically delegated to all service objects in the
+	 * MyxRegistry of type org.archstudio.xarchadt.IXArchADTFileListener.
 	 * 
 	 * @see #IN_FILE_EVENTS
 	 * @generated
 	 */
-	protected final org.archstudio.xarchadt.IXArchADTFileListener fileEventsProxy =
-			(org.archstudio.xarchadt.IXArchADTFileListener) java.lang.reflect.Proxy.newProxyInstance(
-					org.archstudio.xarchadt.IXArchADTFileListener.class.getClassLoader(),
+	protected final org.archstudio.xarchadt.IXArchADTFileListener fileEventsProxy = (org.archstudio.xarchadt.IXArchADTFileListener) java.lang.reflect.Proxy
+			.newProxyInstance(org.archstudio.xarchadt.IXArchADTFileListener.class.getClassLoader(),
 					new Class[] { org.archstudio.xarchadt.IXArchADTFileListener.class },
 					new java.lang.reflect.InvocationHandler() {
 						@Override
@@ -276,8 +279,7 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 									org.archstudio.xarchadt.IXArchADTFileListener.class)) {
 								try {
 									method.invoke(o, args);
-								}
-								catch (Exception e) {
+								} catch (Exception e) {
 									e.printStackTrace();
 								}
 							}
@@ -297,21 +299,21 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 
 	/**
 	 * Myx name for the <code>modelEvents</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_MODEL_EVENTS = MyxUtils.createName("modelEvents");
 
 	/**
-	 * Service object proxy for the modelEvents interface. Calls to this proxy object are automatically delegated to all
-	 * service objects in the MyxRegistry of type org.archstudio.xarchadt.IXArchADTModelListener.
+	 * Service object proxy for the modelEvents interface. Calls to this proxy
+	 * object are automatically delegated to all service objects in the
+	 * MyxRegistry of type org.archstudio.xarchadt.IXArchADTModelListener.
 	 * 
 	 * @see #IN_MODEL_EVENTS
 	 * @generated
 	 */
-	protected final org.archstudio.xarchadt.IXArchADTModelListener modelEventsProxy =
-			(org.archstudio.xarchadt.IXArchADTModelListener) java.lang.reflect.Proxy.newProxyInstance(
-					org.archstudio.xarchadt.IXArchADTModelListener.class.getClassLoader(),
+	protected final org.archstudio.xarchadt.IXArchADTModelListener modelEventsProxy = (org.archstudio.xarchadt.IXArchADTModelListener) java.lang.reflect.Proxy
+			.newProxyInstance(org.archstudio.xarchadt.IXArchADTModelListener.class.getClassLoader(),
 					new Class[] { org.archstudio.xarchadt.IXArchADTModelListener.class },
 					new java.lang.reflect.InvocationHandler() {
 						@Override
@@ -322,8 +324,7 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 									org.archstudio.xarchadt.IXArchADTModelListener.class)) {
 								try {
 									method.invoke(o, args);
-								}
-								catch (Exception e) {
+								} catch (Exception e) {
 									e.printStackTrace();
 								}
 							}
@@ -343,7 +344,7 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 
 	/**
 	 * Myx name for the <code>launcher</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_LAUNCHER = MyxUtils.createName("launcher");
@@ -360,22 +361,22 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 
 	/**
 	 * Myx name for the <code>variabilityEvents</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_VARIABILITY_EVENTS = MyxUtils.createName("variabilityEvents");
 
 	/**
-	 * Service object proxy for the variabilityEvents interface. Calls to this proxy object are automatically delegated
-	 * to all service objects in the MyxRegistry of type
+	 * Service object proxy for the variabilityEvents interface. Calls to this
+	 * proxy object are automatically delegated to all service objects in the
+	 * MyxRegistry of type
 	 * org.archstudio.xarchadt.variability.IXArchADTVariabilityListener.
 	 * 
 	 * @see #IN_VARIABILITY_EVENTS
 	 * @generated
 	 */
-	protected final org.archstudio.xarchadt.variability.IXArchADTVariabilityListener variabilityEventsProxy =
-			(org.archstudio.xarchadt.variability.IXArchADTVariabilityListener) java.lang.reflect.Proxy.newProxyInstance(
-					org.archstudio.xarchadt.variability.IXArchADTVariabilityListener.class.getClassLoader(),
+	protected final org.archstudio.xarchadt.variability.IXArchADTVariabilityListener variabilityEventsProxy = (org.archstudio.xarchadt.variability.IXArchADTVariabilityListener) java.lang.reflect.Proxy
+			.newProxyInstance(org.archstudio.xarchadt.variability.IXArchADTVariabilityListener.class.getClassLoader(),
 					new Class[] { org.archstudio.xarchadt.variability.IXArchADTVariabilityListener.class },
 					new java.lang.reflect.InvocationHandler() {
 						@Override
@@ -386,8 +387,7 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 											org.archstudio.xarchadt.variability.IXArchADTVariabilityListener.class)) {
 								try {
 									method.invoke(o, args);
-								}
-								catch (Exception e) {
+								} catch (Exception e) {
 									e.printStackTrace();
 								}
 							}
@@ -416,6 +416,7 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 	 * @see #IN_VARIABILITY_EVENTS
 	 * @generated
 	 */
+
 	@Override
 	public Object getServiceObject(IMyxName interfaceName) {
 		if (interfaceName.equals(IN_FOCUS_EDITOR_EVENTS)) {
@@ -448,40 +449,36 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 	 * @see #OUT_XARCH
 	 * @generated
 	 */
+
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		if (interfaceName.equals(OUT_RESOURCES)) {
-			if (resources != null) {
+			if (resources != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: resources");
-			}
 			resources = (org.archstudio.resources.IResources) serviceObject;
 			return;
 		}
 
 		if (interfaceName.equals(OUT_EDITOR_MANAGER)) {
-			if (editorManager != null) {
+			if (editorManager != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: editorManager");
-			}
 			editorManager = (org.archstudio.editormanager.IEditorManager) serviceObject;
 			return;
 		}
 
 		if (interfaceName.equals(OUT_FILE_MANAGER)) {
-			if (fileManager != null) {
+			if (fileManager != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: fileManager");
-			}
 			fileManager = (org.archstudio.filemanager.IFileManager) serviceObject;
 			return;
 		}
 
 		if (interfaceName.equals(OUT_XARCH)) {
-			if (xarch != null) {
+			if (xarch != null)
 				throw new IllegalStateException("Only a single connection is supported on interface: xarch");
-			}
 			xarch = (org.archstudio.xarchadt.IXArchADT) serviceObject;
 			return;
 		}
@@ -498,36 +495,32 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 	 * @see #OUT_XARCH
 	 * @generated
 	 */
+
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		if (interfaceName.equals(OUT_RESOURCES)) {
-			if (resources == null) {
+			if (resources == null)
 				throw new IllegalStateException("A connection was never made on interface: resources");
-			}
 			resources = null;
 			return;
 		}
 		if (interfaceName.equals(OUT_EDITOR_MANAGER)) {
-			if (editorManager == null) {
+			if (editorManager == null)
 				throw new IllegalStateException("A connection was never made on interface: editorManager");
-			}
 			editorManager = null;
 			return;
 		}
 		if (interfaceName.equals(OUT_FILE_MANAGER)) {
-			if (fileManager == null) {
+			if (fileManager == null)
 				throw new IllegalStateException("A connection was never made on interface: fileManager");
-			}
 			fileManager = null;
 			return;
 		}
 		if (interfaceName.equals(OUT_XARCH)) {
-			if (xarch == null) {
+			if (xarch == null)
 				throw new IllegalStateException("A connection was never made on interface: xarch");
-			}
 			xarch = null;
 			return;
 		}
@@ -539,6 +532,7 @@ public abstract class AbstractArchStudioEditorMyxComponentStub extends org.archs
 	 * 
 	 * @generated
 	 */
+
 	@Override
 	public void interfaceDisconnected(IMyxName interfaceName, Object serviceObject) {
 	}

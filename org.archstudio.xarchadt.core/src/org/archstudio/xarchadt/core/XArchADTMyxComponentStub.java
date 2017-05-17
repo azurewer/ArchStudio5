@@ -5,13 +5,16 @@ import org.archstudio.myx.fw.MyxRegistry;
 import org.archstudio.myx.fw.MyxUtils;
 
 /*
- * DO NOT EDIT THIS CLASS, it is automatically generated. ANY MODIFICATIONS WILL BE OVERWRITTEN. To modify, update the
- * "XArch ADT Impl" MyxGen extension in the org.archstudio.xarchadt.core plugin.
+ * DO NOT EDIT THIS CLASS, it is automatically generated.
+ * ANY MODIFICATIONS WILL BE OVERWRITTEN.
+ *
+ * To modify, update the "XArch ADT Impl" MyxGen 
+ * extension in the org.archstudio.xarchadt.core plugin.
  */
 
 /**
  * Abstract Myx brick: XArch ADT Impl
- *
+ * 
  * @generated
  */
 public abstract class XArchADTMyxComponentStub extends org.archstudio.myx.fw.AbstractMyxSimpleBrick
@@ -47,7 +50,7 @@ public abstract class XArchADTMyxComponentStub extends org.archstudio.myx.fw.Abs
 
 	/**
 	 * Myx name for the <code>fileEvents</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_FILE_EVENTS = MyxUtils.createName("fileEvents");
@@ -58,19 +61,17 @@ public abstract class XArchADTMyxComponentStub extends org.archstudio.myx.fw.Abs
 	 * @see #OUT_FILE_EVENTS
 	 * @generated
 	 */
-	protected final java.util.Collection<org.archstudio.xarchadt.IXArchADTFileListener> fileEvents =
-			new java.util.concurrent.CopyOnWriteArrayList<org.archstudio.xarchadt.IXArchADTFileListener>();
+	protected final java.util.Collection<org.archstudio.xarchadt.IXArchADTFileListener> fileEvents = new java.util.concurrent.CopyOnWriteArrayList<org.archstudio.xarchadt.IXArchADTFileListener>();
 
 	/**
-	 * Service object proxy for the fileEvents interface. Calls to this proxy object are automatically delegated to all
-	 * connections on the interface
+	 * Service object proxy for the fileEvents interface. Calls to this proxy
+	 * object are automatically delegated to all connections on the interface
 	 * 
 	 * @see #OUT_FILE_EVENTS
 	 * @generated
 	 */
-	protected final org.archstudio.xarchadt.IXArchADTFileListener fileEventsProxy =
-			(org.archstudio.xarchadt.IXArchADTFileListener) java.lang.reflect.Proxy.newProxyInstance(
-					org.archstudio.xarchadt.IXArchADTFileListener.class.getClassLoader(),
+	protected final org.archstudio.xarchadt.IXArchADTFileListener fileEventsProxy = (org.archstudio.xarchadt.IXArchADTFileListener) java.lang.reflect.Proxy
+			.newProxyInstance(org.archstudio.xarchadt.IXArchADTFileListener.class.getClassLoader(),
 					new Class[] { org.archstudio.xarchadt.IXArchADTFileListener.class },
 					new java.lang.reflect.InvocationHandler() {
 						@Override
@@ -79,8 +80,7 @@ public abstract class XArchADTMyxComponentStub extends org.archstudio.myx.fw.Abs
 							for (org.archstudio.xarchadt.IXArchADTFileListener o : fileEvents) {
 								try {
 									method.invoke(o, args);
-								}
-								catch (Exception e) {
+								} catch (Exception e) {
 									e.printStackTrace();
 								}
 							}
@@ -100,7 +100,7 @@ public abstract class XArchADTMyxComponentStub extends org.archstudio.myx.fw.Abs
 
 	/**
 	 * Myx name for the <code>modelEvents</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName OUT_MODEL_EVENTS = MyxUtils.createName("modelEvents");
@@ -111,19 +111,17 @@ public abstract class XArchADTMyxComponentStub extends org.archstudio.myx.fw.Abs
 	 * @see #OUT_MODEL_EVENTS
 	 * @generated
 	 */
-	protected final java.util.Collection<org.archstudio.xarchadt.IXArchADTModelListener> modelEvents =
-			new java.util.concurrent.CopyOnWriteArrayList<org.archstudio.xarchadt.IXArchADTModelListener>();
+	protected final java.util.Collection<org.archstudio.xarchadt.IXArchADTModelListener> modelEvents = new java.util.concurrent.CopyOnWriteArrayList<org.archstudio.xarchadt.IXArchADTModelListener>();
 
 	/**
-	 * Service object proxy for the modelEvents interface. Calls to this proxy object are automatically delegated to all
-	 * connections on the interface
+	 * Service object proxy for the modelEvents interface. Calls to this proxy
+	 * object are automatically delegated to all connections on the interface
 	 * 
 	 * @see #OUT_MODEL_EVENTS
 	 * @generated
 	 */
-	protected final org.archstudio.xarchadt.IXArchADTModelListener modelEventsProxy =
-			(org.archstudio.xarchadt.IXArchADTModelListener) java.lang.reflect.Proxy.newProxyInstance(
-					org.archstudio.xarchadt.IXArchADTModelListener.class.getClassLoader(),
+	protected final org.archstudio.xarchadt.IXArchADTModelListener modelEventsProxy = (org.archstudio.xarchadt.IXArchADTModelListener) java.lang.reflect.Proxy
+			.newProxyInstance(org.archstudio.xarchadt.IXArchADTModelListener.class.getClassLoader(),
 					new Class[] { org.archstudio.xarchadt.IXArchADTModelListener.class },
 					new java.lang.reflect.InvocationHandler() {
 						@Override
@@ -132,8 +130,7 @@ public abstract class XArchADTMyxComponentStub extends org.archstudio.myx.fw.Abs
 							for (org.archstudio.xarchadt.IXArchADTModelListener o : modelEvents) {
 								try {
 									method.invoke(o, args);
-								}
-								catch (Exception e) {
+								} catch (Exception e) {
 									e.printStackTrace();
 								}
 							}
@@ -153,7 +150,7 @@ public abstract class XArchADTMyxComponentStub extends org.archstudio.myx.fw.Abs
 
 	/**
 	 * Myx name for the <code>xarch</code> interface.
-	 *
+	 * 
 	 * @generated
 	 */
 	public static final IMyxName IN_XARCH = MyxUtils.createName("xarch");
@@ -205,9 +202,8 @@ public abstract class XArchADTMyxComponentStub extends org.archstudio.myx.fw.Abs
 	 */
 	@Override
 	public void interfaceConnected(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 
 		if (interfaceName.equals(OUT_FILE_EVENTS)) {
 			fileEvents.add((org.archstudio.xarchadt.IXArchADTFileListener) serviceObject);
@@ -231,9 +227,8 @@ public abstract class XArchADTMyxComponentStub extends org.archstudio.myx.fw.Abs
 	 */
 	@Override
 	public void interfaceDisconnecting(IMyxName interfaceName, Object serviceObject) {
-		if (serviceObject == null) {
+		if (serviceObject == null)
 			throw new NullPointerException(interfaceName.getName());
-		}
 		if (interfaceName.equals(OUT_FILE_EVENTS)) {
 			fileEvents.remove(serviceObject);
 			return;

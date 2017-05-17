@@ -2,10 +2,13 @@
  */
 package org.archstudio.xadl3.structure_3_0.impl;
 
+import org.archstudio.xadl3.structure_3_0.CoalAgent;
 import org.archstudio.xadl3.structure_3_0.Component;
 import org.archstudio.xadl3.structure_3_0.Connector;
 import org.archstudio.xadl3.structure_3_0.Direction;
 import org.archstudio.xadl3.structure_3_0.DocumentRoot;
+import org.archstudio.xadl3.structure_3_0.EncapsulatedUnit;
+import org.archstudio.xadl3.structure_3_0.FunAgent;
 import org.archstudio.xadl3.structure_3_0.Interface;
 import org.archstudio.xadl3.structure_3_0.InterfaceMapping;
 import org.archstudio.xadl3.structure_3_0.Link;
@@ -21,32 +24,34 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model <b>Factory</b>. <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model <b>Factory</b>. <!--
+ * end-user-doc -->
  * 
  * @generated
  */
 public class Structure_3_0FactoryImpl extends EFactoryImpl implements Structure_3_0Factory {
 	/**
-	 * Creates the default factory implementation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * Creates the default factory implementation. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * 
 	 * @generated
 	 */
 	public static Structure_3_0Factory init() {
 		try {
-			Structure_3_0Factory theStructure_3_0Factory =
-					(Structure_3_0Factory) EPackage.Registry.INSTANCE.getEFactory(Structure_3_0Package.eNS_URI);
+			Structure_3_0Factory theStructure_3_0Factory = (Structure_3_0Factory) EPackage.Registry.INSTANCE
+					.getEFactory(Structure_3_0Package.eNS_URI);
 			if (theStructure_3_0Factory != null) {
 				return theStructure_3_0Factory;
 			}
-		}
-		catch (Exception exception) {
+		} catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new Structure_3_0FactoryImpl();
 	}
 
 	/**
-	 * Creates an instance of the factory. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * Creates an instance of the factory. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * 
 	 * @generated
 	 */
@@ -62,12 +67,18 @@ public class Structure_3_0FactoryImpl extends EFactoryImpl implements Structure_
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
+		case Structure_3_0Package.COAL_AGENT:
+			return createCoalAgent();
 		case Structure_3_0Package.COMPONENT:
 			return createComponent();
 		case Structure_3_0Package.CONNECTOR:
 			return createConnector();
 		case Structure_3_0Package.DOCUMENT_ROOT:
 			return createDocumentRoot();
+		case Structure_3_0Package.ENCAPSULATED_UNIT:
+			return createEncapsulatedUnit();
+		case Structure_3_0Package.FUN_AGENT:
+			return createFunAgent();
 		case Structure_3_0Package.INTERFACE:
 			return createInterface();
 		case Structure_3_0Package.INTERFACE_MAPPING:
@@ -123,6 +134,17 @@ public class Structure_3_0FactoryImpl extends EFactoryImpl implements Structure_
 	 * @generated
 	 */
 	@Override
+	public CoalAgent createCoalAgent() {
+		CoalAgentImpl coalAgent = new CoalAgentImpl();
+		return coalAgent;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
 	public Component createComponent() {
 		ComponentImpl component = new ComponentImpl();
 		return component;
@@ -148,6 +170,28 @@ public class Structure_3_0FactoryImpl extends EFactoryImpl implements Structure_
 	public DocumentRoot createDocumentRoot() {
 		DocumentRootImpl documentRoot = new DocumentRootImpl();
 		return documentRoot;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EncapsulatedUnit createEncapsulatedUnit() {
+		EncapsulatedUnitImpl encapsulatedUnit = new EncapsulatedUnitImpl();
+		return encapsulatedUnit;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public FunAgent createFunAgent() {
+		FunAgentImpl funAgent = new FunAgentImpl();
+		return funAgent;
 	}
 
 	/**
@@ -212,10 +256,9 @@ public class Structure_3_0FactoryImpl extends EFactoryImpl implements Structure_
 	 */
 	public Direction createDirectionFromString(EDataType eDataType, String initialValue) {
 		Direction result = Direction.get(initialValue);
-		if (result == null) {
+		if (result == null)
 			throw new IllegalArgumentException(
 					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		}
 		return result;
 	}
 

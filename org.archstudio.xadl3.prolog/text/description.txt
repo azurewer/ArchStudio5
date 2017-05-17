@@ -16,6 +16,16 @@ Package structure_3_0 <http://www.archstudio.org/xadl3/schemas/structure-3.0.xsd
   Class Component -> Brick
     Reference ext : Extension<<0..*>>
 
+
+  Class CoalAgent -> Brick
+    Reference ext : Extension<<0..*>>
+    
+  Class FunAgent -> Brick
+    Reference ext : Extension<<0..*>>
+  Class EncapsulatedUnit -> Brick
+    Reference ext : Extension<<0..*>> 
+    
+    
   Class Connector -> Brick
     Reference ext : Extension<<0..*>>
 
@@ -47,6 +57,13 @@ Package structure_3_0 <http://www.archstudio.org/xadl3/schemas/structure-3.0.xsd
 
   Class Structure
     Reference component : Component<<0..*>>
+    
+    Reference coalAgent : CoalAgent<<0..*>>
+    
+    Reference funAgent : FunAgent<<0..*>>
+    Reference encapsulatedUnit : EncapsulatedUnit<<0..*>>
+    
+    
     Reference connector : Connector<<0..*>>
     Reference link : Link<<0..*>>
     Reference ext : Extension<<0..*>>
