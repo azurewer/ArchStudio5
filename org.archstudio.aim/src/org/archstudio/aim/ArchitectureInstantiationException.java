@@ -11,6 +11,8 @@ public class ArchitectureInstantiationException extends Exception {
 	public ArchitectureInstantiationException(String message) {
 		super(message);
 	}
+	
+	
 
 	public ArchitectureInstantiationException(Throwable cause) {
 		super(cause);
